@@ -16,6 +16,8 @@ header {
     top: 0;
 }
 header img {
+    width: 194px;
+    height: 41px;
     margin-top: 28px;
     margin-left: 29px;
 }
@@ -32,3 +34,5 @@ main {
     display: inline-block;
     margin-top: 98px;
 }
+
+
