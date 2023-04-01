@@ -12,8 +12,23 @@ header {
     width: 1512px;
     height: 98px;
     background-color: var(--Grayish-Navi);
+    position: fixed;
+    top: 0;
 }
 header img {
     margin-top: 28px;
     margin-left: 29px;
+}
+aside {
+    width: 313px;
+    height: 915px;
+    background-color: var(--Ligh-Grayish-Green);
+    position: fixed;
+    top: 98px;
+    display: inline-block;
+}
+main {
+    margin-left: 313px;
+    display: inline-block;
+    margin-top: 98px;
 }
