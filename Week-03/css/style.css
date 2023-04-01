@@ -1,0 +1,19 @@
+:root {
+    --Grayish-Navi: #373867;
+    --Ligh-Grayish-Green: #AACE9B;
+    --Withe : #FFFFFF;
+}
+body {
+    background-color: var(--Withe);
+    width: 1512px;
+    height: 3146px;
+}
+header {
+    width: 1512px;
+    height: 98px;
+    background-color: var(--Grayish-Navi);
+}
+header img {
+    margin-top: 28px;
+    margin-left: 29px;
+}
