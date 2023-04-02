@@ -3,11 +3,17 @@
     --Ligh-Grayish-Green: #AACE9B;
     --Withe : #FFFFFF;
 }
+
+* {
+    font-family: ;
+}
+
 body {
     background-color: var(--Withe);
     width: 1512px;
     height: 3146px;
 }
+
 header {
     width: 1512px;
     height: 98px;
@@ -15,24 +21,119 @@ header {
     position: fixed;
     top: 0;
 }
+
 header img {
     width: 194px;
     height: 41px;
     margin-top: 28px;
     margin-left: 29px;
 }
+
 aside {
     width: 313px;
     height: 915px;
     background-color: var(--Ligh-Grayish-Green);
     position: fixed;
     top: 98px;
-    display: inline-block;
 }
+
+aside nav {
+    width: 263px;
+    height: 146.95px;
+    box-sizing: border-box;
+    margin: 12.38px auto 0;
+}
+
+aside nav ul {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+aside nav ul li {
+    background-color: var(--Withe);
+    width: 263px;
+    height: 37.69px;
+    box-sizing: border-box;
+    margin-bottom: 16.44px;
+    border-radius: 5px;
+}
+
+.nav-btn {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    height: 37.69px;
+}
+
+aside div h2 {
+    color: var(--Withe);
+    text-decoration: underline;
+    margin: 0 0 39px 0;
+    text-align: center;
+}
+
+aside div ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside div ul li {
+    margin-bottom: 23px;
+}
+
+.contact-info {
+    width: 253px;
+    height: 240px;
+    box-sizing: border-box;
+    margin: 481.67px auto 0;
+}
+
+.contact-info-icons {
+    margin-right: 12px;
+}
+
+aside div ul li span {
+    width: 193px;
+    display: inline-block;
+    text-align: start;
+}
+
 main {
-    margin-left: 313px;
-    display: inline-block;
-    margin-top: 98px;
+    padding-left: 313px;
+    padding-top: 98px;
 }
 
+.first-section {
+    width: 1049px;
+    height: 315px;
+    margin: 65px auto;
+}
 
+.mega-rocket-section {
+    width: 410px;
+    height: 185px;
+    margin-left: 74px;
+    margin-right: 61px;
+    margin-top: 75px;
+    float: left;
+}
+
+.mega-rocket-section h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.mega-rocket-section h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 34px 0;
+}
+
+.mega-rocket-section p {
+    margin: 0;
+    text-align: center;
+}
