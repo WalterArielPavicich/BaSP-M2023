@@ -13,7 +13,7 @@
 body {
     background-color: var(--Withe);
     width: 1512px;
-    height: 3146px;
+    height: 100%;
 }
 
 header {
@@ -22,6 +22,10 @@ header {
     background-color: var(--Grayish-Navi);
     position: fixed;
     top: 0;
+}
+
+input {
+    box-shadow: none;
 }
 
 header img {
@@ -33,7 +37,7 @@ header img {
 
 aside {
     width: 313px;
-    height: 915px;
+    height: 100%;
     background-color: var(--Ligh-Grayish-Green);
     position: fixed;
     top: 98px;
@@ -95,12 +99,14 @@ aside div ul li {
     width: 253px;
     height: 240px;
     box-sizing: border-box;
-    margin: 481.67px auto 0;
+    margin: 580px auto 0;
 }
 
 .contact-info h2 {
     font-size: 20px;
     font-weight: bold;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 3px;
 }
 
 .contact-info-icons {
@@ -208,7 +214,7 @@ main {
     width: 1026px;
     height: 610px;
     box-sizing: border-box;
-    margin-left: 87px;
+    margin: 65px auto 0;
 }
 
 .third-section h2 {
@@ -261,4 +267,98 @@ footer {
     width: 1200px;
     height: 72px;
     padding-left: 312px;
+}
+
+.four-section {
+    width: 900px;
+    height: 387px;
+    margin: 65px auto 65px;
+    box-sizing: border-box;
+}
+
+.four-section h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: var(--Ligh-Grayish-Green);
+    text-decoration-thickness: 4px;
+    text-underline-offset: 5px;
+    text-align: center;
+    margin-bottom: 54px;
+    margin-top: 0;
+}
+
+.label-form-div1 {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.label-form-div2 {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.input-form {
+    box-sizing: border-box;
+    width: 260px;
+    height: 37px;
+    border: 1px solid var(--Grayish-Navi);
+    border-radius: 4px;
+    border-color: var(--Grayish-Navi);
+
+}
+
+.first-section-form {
+    display: inline-block;
+    margin-right: 74px;
+}
+
+.second-section-form {
+    display: inline-block;
+    float: right;
+}
+
+.label-input {
+    margin-bottom: 23px;
+}
+
+.contact-reason {
+    box-sizing: border-box;
+    width: 561px;
+    height: 37px;
+    border: 1px solid var(--Grayish-Navi);
+    border-radius: 4px;
+    background-color: var(--Withe);
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.textarea {
+    box-sizing: border-box;
+    width: 561px;
+    height: 191px;
+    border: 1px solid var(--Grayish-Navi);
+    border-radius: 4px;
+}
+
+::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.button {
+    width: 123px;
+    height: 47px;
+    background-color: var(--Ligh-Grayish-Green);
+    color: var(--Grayish-Navi);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
 }
