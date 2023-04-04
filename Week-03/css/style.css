@@ -35,6 +35,8 @@ header img {
     margin-left: 29px;
 }
 
+/* Aside */
+
 aside {
     width: 313px;
     height: 100%;
@@ -60,9 +62,8 @@ aside nav ul {
 aside nav ul li {
     background-color: var(--Withe);
     width: 263px;
-    height: 37.69px;
     box-sizing: border-box;
-    margin-bottom: 16.44px;
+    margin-bottom: 17px;
     border-radius: 5px;
 }
 
@@ -70,7 +71,7 @@ aside nav ul li {
     display: block;
     text-decoration: none;
     text-align: center;
-    height: 37.69px;
+    padding: 8px 40px;
 }
 
 nav span {
@@ -129,6 +130,8 @@ main {
     padding-left: 313px;
     padding-top: 98px;
 }
+
+/* Mega Rocket Web */
 
 .first-section {
     width: 1049px;
@@ -210,6 +213,8 @@ main {
     margin-right: 0px;
 }
 
+/* About Mega Rocket */
+
 .third-section {
     width: 1026px;
     height: 610px;
@@ -262,12 +267,7 @@ main {
     margin: 84px 0 0 0;
 }
 
-footer {
-    background-color: var(--Ligh-Grayish-Green);
-    width: 1200px;
-    height: 72px;
-    padding-left: 312px;
-}
+/* Get in touch */
 
 .four-section {
     width: 900px;
@@ -347,6 +347,7 @@ footer {
 }
 
 ::placeholder {
+    color: var(--Grayish-Navi);
     font-size: 14px;
     font-weight: 400;
     opacity: 0.5;
@@ -362,3 +363,107 @@ footer {
     border-radius: 5px;
     border: none;
 }
+
+/* Gym activities */
+
+.fifth-section {
+    width: 934px;
+    margin: 0 auto;
+    margin-bottom: 65px
+}
+
+.fifth-section h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: var(--Ligh-Grayish-Green);
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
+    text-align: center;
+    margin-bottom: 54px;
+    margin-top: 0;
+}
+
+.fifth-section ul {
+    width: 176px;
+    list-style: disc inside;
+    display: inline-block;
+    margin-right: 117px;
+    margin-bottom: 34px;
+    vertical-align: bottom;
+}
+
+.fifth-section ul li {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 13px;
+}
+
+/* Memberships */
+
+.sixth-section {
+    width: 982px;
+    margin: 0 auto;
+    margin-bottom: 65px
+}
+
+.sixth-section h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: var(--Ligh-Grayish-Green);
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
+    text-align: center;
+    margin-bottom: 54px;
+    margin-top: 0;
+}
+
+.tr {
+    background-color: #D9D9D9;
+}
+
+.empty-th {
+    width: 478px;
+}
+
+.columns-th {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 22px 70px;
+}
+
+.latest-th {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 22px 20px;
+}
+
+.td {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding: 22px 0;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--Ligh-Grayish-Green);
+    width: 1200px;
+    height: 72px;
+    padding-left: 312px;
+    text-align: center;
+}
+
+.social-networks {
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+
+.copyright {
+    color: var(--Withe);
+    font-size: 14px;
+    font-weight: 700;
+}
+
