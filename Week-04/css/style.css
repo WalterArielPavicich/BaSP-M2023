@@ -1,0 +1,415 @@
+/* Variables */
+
+/* :root {
+    --Grayish-Navi: #373867;
+    --Ligh-Grayish-Green: #AACE9B;
+    --Withe : #FFFFFF;
+}
+ */
+/* Universal Selector */
+
+/* * {
+    color: var(--Grayish-Navi);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+ */
+/* Element-Selectors */
+
+/* body {
+    box-sizing: border-box;
+    width: 1512px;
+    background-color: var(--Withe);
+    overflow-x: hidden;
+}
+ */
+/* header {
+    position: fixed;
+    width: 1512px;
+    height: 98px;
+    background-color: var(--Grayish-Navi);
+}
+ */
+/* aside {
+    position: fixed;
+    width: 313px;
+    height: 100%;
+    top: 98px;
+    background-color: var(--Ligh-Grayish-Green);
+}
+ */
+/* main {
+    padding: 98px 0 0 313px;
+}
+ */
+/* footer {
+    width: 1200px;
+    height: 72px;
+    margin-left: 312px;
+    text-align: center;
+    background-color: var(--Ligh-Grayish-Green);
+}
+ */
+/* input {
+    box-shadow: none;
+}
+ */
+/* Header */
+
+/* .img-header {
+    padding: 28px 0 29px 29px;
+}
+ */
+/* Nav-Aside */
+
+/* .nav-aside {
+    box-sizing: border-box;
+    width: 263px;
+    margin: 12px auto 481px;
+}
+ */
+/* .nav-list {
+    box-sizing: border-box;
+}
+ */
+/* .nav-item {
+    box-sizing: border-box;
+    width: 263px;
+    margin-bottom: 17px;
+    background-color: var(--Withe);
+    border-radius: 5px;
+}
+ */
+/* .nav-btn {
+    display: block;
+    margin-left: 79px;
+    padding: 8px 0px;
+    text-decoration: none;
+}
+ */
+/* .img-btn {
+    margin-right: 10px;
+}
+ */
+/* .text-btn {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 900;
+    font-size: 20px;
+}
+ */
+/* Nav-Contact-Info */
+
+/* .contact-info-container {
+    box-sizing: border-box;
+    width: 253px;
+    margin: 0 auto;
+}
+ */
+/* .contact-info-title {
+    margin-bottom: 39px;
+    color: var(--Withe);
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    text-underline-offset: 4px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+ */
+/* .contact-info-item {
+    margin-bottom: 23px;
+}
+ */
+/* .contact-info-icons {
+    margin-right: 12px;
+    vertical-align: top;
+}
+ */
+/* .contact-info-text {
+    display: inline-block;
+    width: 212px;
+    font-size: 20px;
+    font-weight: 400;
+}
+ */
+/* Mega-Rocket-Web */
+
+/* .first-section {
+    width: 1049px;
+    height: 315px;
+    margin: 65px auto;
+}
+ */
+ /* .mega-rocket-container {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 185px;
+    margin: 75px 61px 0 0;
+    vertical-align: top;
+}
+ */
+/* .mega-rocket-h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+ */
+/* .mega-rocket-h2 {
+    margin-bottom:34px;
+    color: var(--Ligh-Grayish-Green);
+    text-align: center;
+    text-transform: uppercase;
+}
+ */
+/* .mega-rocket-p {
+    width: 483px;
+    text-align: center;
+}
+ */
+/* About-Mega-Rocket */
+
+/* .second-section {
+    width: 959px;
+    height: 469px;
+    margin: 0 0 65px 112px;
+}
+ */
+/* .h2-title {
+    margin-bottom: 54px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: var(--Ligh-Grayish-Green);
+    text-decoration-thickness: 4px;
+}
+ */
+/* .features-article-left {
+    display: inline-block;
+    width: 395px;
+    height: 182px;
+    margin-right: 164px;
+}
+ */
+/* .img-title-container {
+    box-sizing: border-box;
+    height: 38px;
+    margin-bottom: 29px;
+}
+ */
+/* .icon-features {
+    margin-right: 15px;
+}
+ */
+/* .article-title {
+    display: inline-block;
+    padding: 7px 0;
+    vertical-align: top;
+    font-size: 24px;
+    font-weight: 900;
+}
+ */
+/* .features-p {
+    padding-left: 60px;
+}
+ */
+/* .features-article-right {
+    display: inline-block;
+    width: 395px;
+    height: 182px;
+    margin-right: 0px;
+}
+ */
+/* About Mega Rocket */
+
+/* .third-section {
+    width: 1026px;
+    height: 610px;
+    margin: 0 auto 65px;
+}
+ */
+/* .first-article-about {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+}
+ */
+/* .first-img-about {
+    display: inline-block;
+    margin-right: 19px;
+}
+ */
+/* .first-p-about {
+    display: inline-block;
+    width: 549px;
+    padding: 44px 0;
+    vertical-align: top;
+    text-align: right;
+}
+ */
+/* .second-p-about {
+    display: inline-block;
+    width: 539px;
+    margin-right: 29px;
+    padding: 66px 0;
+    vertical-align: top;
+    text-align: left;
+}
+ */
+/* .second-img-about {
+    display: inline-block;
+}
+ */
+/* Get in touch */
+
+/* .fourth-section {
+    width: 900px;
+    height: 387px;
+    margin: 0px auto 65px;
+}
+ */
+/* .first-container-form {
+    display: inline-block;
+    margin-right: 74px;
+}
+ */
+/* .label-input {
+    margin-bottom: 23px;
+}
+ */
+/* .label-form-left {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 500;
+}
+ */
+/* .input-form {
+    box-sizing: border-box;
+    width: 260px;
+    height: 37px;
+    border: 1px solid var(--Grayish-Navi);
+    border-radius: 4px;
+}
+ */
+/* .placeholder {
+    padding: 10px;
+    color: var(--Grayish-Navi);
+    font-size: 14px;
+    font-weight: 400;
+}
+ */
+/* .label-form-right {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 500;
+}
+ */
+/* .second-container-form {
+    display: inline-block;
+    vertical-align: top;
+}
+ */
+/* .contact-reason {
+    width: 561px;
+    height: 37px;
+    background-color: var(--Withe);
+    border: 1px solid var(--Grayish-Navi);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+}
+ */
+/* .textarea {
+    box-sizing: border-box;
+    width: 561px;
+    height: 191px;
+    border: 1px solid var(--Grayish-Navi);
+    border-radius: 4px;
+}
+ */
+/* .button {
+    width: 123px;
+    height: 47px;
+    background-color: var(--Ligh-Grayish-Green);
+    color: var(--Grayish-Navi);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+ */
+/* Gym activities */
+
+/* .fifth-section {
+    width: 934px;
+    margin: 0 auto 65px;
+}
+ */
+/* .activities-list {
+    display: inline-block;
+    width: 176px;
+    margin-right: 117px;
+    padding: 34px 0;
+    vertical-align: bottom;
+    list-style: disc inside;
+}
+ */
+/* .activities-item {
+    margin-bottom: 13px;
+    font-size: 24px;
+    font-weight: 900;
+}
+ */
+/* Memberships */
+
+/* .sixth-section {
+    width: 982px;
+    margin: 0 auto 65px;
+}
+ */
+/* .tr-rows {
+    background-color: #D9D9D9;
+}
+ */
+/* .empty-th {
+    width: 478px;
+}
+ */
+/* .th-columns {
+    padding: 22px 70px;
+    font-size: 14px;
+    font-weight: 600;
+}
+ */
+/* .latest-th {
+    padding: 22px 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+ */
+/* .td-columns {
+    padding: 22px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+ */
+/* Footer */
+
+/* .social-media-container {
+    padding: 8px 0 5px;
+}
+ */
+/* .social-media-icon {
+    margin-right: 16px;
+}
+ */
+/* .copyright {
+    color: var(--Withe);
+    font-size: 14px;
+    font-weight: 700;
+} */
