@@ -1,139 +1,32 @@
 /* Variables */
 
-/* :root {
+:root {
     --Grayish-Navi: #373867;
     --Ligh-Grayish-Green: #AACE9B;
     --Withe : #FFFFFF;
 }
- */
+
 /* Universal Selector */
 
-/* * {
+* {
+    box-sizing: border-box;
     color: var(--Grayish-Navi);
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 400;
 }
- */
+
 /* Element-Selectors */
 
-/* body {
-    box-sizing: border-box;
-    width: 1512px;
+body {
+    width: 100%;
     background-color: var(--Withe);
-    overflow-x: hidden;
 }
- */
-/* header {
-    position: fixed;
-    width: 1512px;
-    height: 98px;
-    background-color: var(--Grayish-Navi);
-}
- */
-/* aside {
-    position: fixed;
-    width: 313px;
-    height: 100%;
-    top: 98px;
-    background-color: var(--Ligh-Grayish-Green);
-}
- */
-/* main {
-    padding: 98px 0 0 313px;
-}
- */
-/* footer {
-    width: 1200px;
-    height: 72px;
-    margin-left: 312px;
-    text-align: center;
-    background-color: var(--Ligh-Grayish-Green);
-}
- */
-/* input {
+
+input {
     box-shadow: none;
 }
- */
-/* Header */
 
-/* .img-header {
-    padding: 28px 0 29px 29px;
-}
- */
-/* Nav-Aside */
-
-/* .nav-aside {
-    box-sizing: border-box;
-    width: 263px;
-    margin: 12px auto 481px;
-}
- */
-/* .nav-list {
-    box-sizing: border-box;
-}
- */
-/* .nav-item {
-    box-sizing: border-box;
-    width: 263px;
-    margin-bottom: 17px;
-    background-color: var(--Withe);
-    border-radius: 5px;
-}
- */
-/* .nav-btn {
-    display: block;
-    margin-left: 79px;
-    padding: 8px 0px;
-    text-decoration: none;
-}
- */
-/* .img-btn {
-    margin-right: 10px;
-}
- */
-/* .text-btn {
-    display: inline-block;
-    vertical-align: top;
-    font-weight: 900;
-    font-size: 20px;
-}
- */
-/* Nav-Contact-Info */
-
-/* .contact-info-container {
-    box-sizing: border-box;
-    width: 253px;
-    margin: 0 auto;
-}
- */
-/* .contact-info-title {
-    margin-bottom: 39px;
-    color: var(--Withe);
-    font-size: 20px;
-    font-weight: 900;
-    text-align: center;
-    text-underline-offset: 4px;
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-}
- */
-/* .contact-info-item {
-    margin-bottom: 23px;
-}
- */
-/* .contact-info-icons {
-    margin-right: 12px;
-    vertical-align: top;
-}
- */
-/* .contact-info-text {
-    display: inline-block;
-    width: 212px;
-    font-size: 20px;
-    font-weight: 400;
-}
- */
 /* Mega-Rocket-Web */
 
 /* .first-section {
@@ -398,18 +291,17 @@
     font-weight: 600;
 }
  */
-/* Footer */
 
-/* .social-media-container {
-    padding: 8px 0 5px;
+
+@media only screen and (min-width: 601px) {
+
 }
- */
-/* .social-media-icon {
-    margin-right: 16px;
+
+
+@media only screen and (min-width: 1025px) {
+    body {
+        width: 100%;
+        background-color: var(--Withe);
+        overflow-x: hidden;
+    }
 }
- */
-/* .copyright {
-    color: var(--Withe);
-    font-size: 14px;
-    font-weight: 700;
-} */
