@@ -26,8 +26,8 @@ footer {
 }
 
 .copyright {
-    color: var(--Withe);
-    font-size: 14px;
+    color: var(--White);
+    font-size: 0.7em;
     font-weight: 700;
 }
 
@@ -64,7 +64,7 @@ footer {
     }
 
     .copyright {
-        color: var(--Withe);
+        color: var(--White);
         font-size: 14px;
         font-weight: 700;
     }

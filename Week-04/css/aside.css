@@ -22,7 +22,7 @@ aside {
     box-sizing: border-box;
     width: 263px;
     margin-bottom: 17px;
-    background-color: var(--Withe);
+    background-color: var(--White);
     border-radius: 5px;
 }
  */
@@ -54,7 +54,7 @@ aside {
  */
 /* .contact-info-title {
     margin-bottom: 39px;
-    color: var(--Withe);
+    color: var(--White);
     font-size: 20px;
     font-weight: 900;
     text-align: center;

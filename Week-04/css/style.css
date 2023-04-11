@@ -3,7 +3,7 @@
 :root {
     --Grayish-Navi: #373867;
     --Ligh-Grayish-Green: #AACE9B;
-    --Withe : #FFFFFF;
+    --White : #FFFFFF;
 }
 
 /* Universal Selector */
@@ -20,11 +20,15 @@
 
 body {
     width: 100%;
-    background-color: var(--Withe);
+    background-color: var(--White);
 }
 
 input {
     box-shadow: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 601px) {
@@ -35,7 +39,7 @@ input {
 @media only screen and (min-width: 1025px) {
     body {
         width: 100%;
-        background-color: var(--Withe);
+        background-color: var(--White);
         overflow-x: hidden;
     }
 }

@@ -22,7 +22,7 @@ main {
 }
 
 .mega-rocket-h1 {
-    font-size: 30px;
+    font-size: 1.5em;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -37,7 +37,7 @@ main {
 
 .mega-rocket-p {
     text-align: center;
-    font-size: 20px;
+    font-size: 1em;
     max-width: 500px;
 }
 
@@ -54,7 +54,7 @@ main {
 
 .h2-title {
     margin-bottom: 17px;
-    font-size: 30px;
+    font-size: 1.5em;
     font-weight: bold;
     text-align: center;
     text-decoration: underline;
@@ -87,12 +87,12 @@ main {
 
 .article-title {
     display: inline-block;
-    font-size: 14px;
+    font-size: 0.7em;
     font-weight: 900;
 }
 
 .features-p {
-    font-size: 12px;
+    font-size: 0.6em;
     max-width: 361px;
 }
 
@@ -120,17 +120,17 @@ main {
     width: 80%;
     max-width: 370px;
     margin-bottom: 7px;
-    font-size: 15px;
+    font-size: 0.6em;
 }
 
 .button-about {
     width: 88px;
     height: 32px;
-    background-color: var(--Withe);
+    background-color: var(--White);
     color: var(--Grayish-Navi);
     border: 1px solid var(--Grayish-Navi);
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 0.6em;
     font-weight: 500;
     margin-bottom: 7px;
 }
@@ -156,7 +156,7 @@ main {
     display: block;
     flex-basis: content;
     margin-bottom: 7px;
-    font-size: 14px;
+    font-size: 0.7em;
     font-weight: 500;
 }
 
@@ -170,17 +170,17 @@ main {
 .placeholder {
     padding: 10px;
     color: var(--Grayish-Navi);
-    font-size: 14px;
+    font-size: 0.7em;
     font-weight: 400;
 }
 
 .contact-reason {
     width: 329px;
     height: 37px;
-    background-color: var(--Withe);
+    background-color: var(--White);
     border: 1px solid var(--Grayish-Navi);
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 0.7em;
     font-weight: 400;
 }
 
@@ -198,7 +198,7 @@ main {
     color: var(--Grayish-Navi);
     border: none;
     border-radius: 5px;
-    font-size: 12px;
+    font-size: 0.6em;
     font-weight: 500;
     align-self: flex-end;
 }
@@ -228,7 +228,7 @@ main {
 }
 
 .activities-item {
-    font-size: 14px;
+    font-size: 0.7em;
     font-weight: 900;
     margin-bottom: 18px;
 }
@@ -252,38 +252,42 @@ main {
 
 /* Memberships */
 
-/* .sixth-section {
-    width: 982px;
-    margin: 0 auto 65px;
+.sixth-section {
+    margin: 0 auto 30px;
 }
- */
-/* .tr-rows {
+
+.memberships-table {
+    margin: 0 auto;
+}
+
+.tr-rows {
     background-color: #D9D9D9;
 }
- */
-/* .empty-th {
-    width: 478px;
-}
- */
-/* .th-columns {
-    padding: 22px 70px;
-    font-size: 14px;
+
+.th-columns {
+    padding: 0 22px;
+    vertical-align: middle;
+    font-size: 0.6em;
     font-weight: 600;
 }
- */
-/* .latest-th {
-    padding: 22px 20px;
-    font-size: 14px;
+
+.latest-th {
+    padding: 13px 13px;
+    font-size: 0.6em;
     font-weight: 600;
 }
- */
-/* .td-columns {
-    padding: 22px 0;
+
+.td-columns {
+    padding-left: 3px;
     text-align: center;
-    font-size: 14px;
+    vertical-align: middle;
+    font-size: 0.6em;
     font-weight: 600;
 }
- */
+
+.cross-check {
+    padding: 13px 5px;
+}
 
  @media only screen and (min-width: 601px) {
     .first-section {
@@ -320,7 +324,7 @@ main {
 
     .h2-title {
         margin-bottom: 57px;
-        font-size: 30px;
+        font-size: 1.5em;
         font-weight: bold;
         text-align: center;
         text-decoration: underline;
@@ -375,7 +379,7 @@ main {
     }
 
     .article-title {
-        font-size: 20px;
+        font-size: 1em;
     }
 
     .features-p {
@@ -418,7 +422,7 @@ main {
         width: 80%;
         max-width: 370px;
         margin-bottom: 7px;
-        font-size: 15px;
+        font-size: 0.6em;
     }
 
     .button-about {
@@ -487,7 +491,7 @@ main {
 }
 
 .activities-item {
-    font-size: 14px;
+    font-size: 0.7em;
     font-weight: 900;
     margin-bottom: 10px;
 }
@@ -505,11 +509,7 @@ main {
 }
 
 
-
-
-
-
-    /* .first-article-about {
+   /* .first-article-about {
         box-sizing: border-box;
         margin-bottom: 24px;
     }
@@ -676,7 +676,7 @@ main {
     }
      */
     /* Get in touch */
-    
+
     /* .fourth-section {
         width: 900px;
         height: 387px;
@@ -729,7 +729,7 @@ main {
     /* .contact-reason {
         width: 561px;
         height: 37px;
-        background-color: var(--Withe);
+        background-color: var(--White);
         border: 1px solid var(--Grayish-Navi);
         border-radius: 4px;
         font-size: 14px;
@@ -810,4 +810,5 @@ main {
         font-size: 14px;
         font-weight: 600;
     }
-}
+ }
+ */
