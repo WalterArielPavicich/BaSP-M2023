@@ -49,7 +49,7 @@ main {
 
 .second-section {
     width: 100%;
-    padding: 0 14px 30px 14px;
+    margin-bottom: 30px;
 }
 
 .h2-title {
@@ -121,13 +121,12 @@ main {
     max-width: 370px;
     margin-bottom: 7px;
     font-size: 15px;
-
 }
 
 .button-about {
     width: 88px;
     height: 32px;
-    background-color: var(--White);
+    background-color: var(--Withe);
     color: var(--Grayish-Navi);
     border: 1px solid var(--Grayish-Navi);
     border-radius: 5px;
@@ -138,57 +137,45 @@ main {
 
 /* Get in touch */
 
-/* .fourth-section {
-    width: 900px;
-    height: 387px;
-    margin: 0px auto 65px;
+.fourth-section {
+    margin-bottom: 30px;
 }
- */
-/* .first-container-form {
-    display: inline-block;
-    margin-right: 74px;
+
+.label-input {
+    margin-bottom: 14px;
 }
- */
-/* .label-input {
-    margin-bottom: 23px;
+
+.first-container-form, .second-container-form {
+    display: flex;
+    flex-direction: column;
+    width: 329px;
+    margin: 0 auto;
 }
- */
-/* .label-form-left {
+
+.label-form-left, .label-form-right {
     display: block;
+    flex-basis: content;
     margin-bottom: 7px;
     font-size: 14px;
     font-weight: 500;
 }
- */
-/* .input-form {
-    box-sizing: border-box;
-    width: 260px;
+
+.input-form {
+    width: 329px;
     height: 37px;
     border: 1px solid var(--Grayish-Navi);
     border-radius: 4px;
 }
- */
-/* .placeholder {
+
+.placeholder {
     padding: 10px;
     color: var(--Grayish-Navi);
     font-size: 14px;
     font-weight: 400;
 }
- */
-/* .label-form-right {
-    display: block;
-    margin-bottom: 7px;
-    font-size: 14px;
-    font-weight: 500;
-}
- */
-/* .second-container-form {
-    display: inline-block;
-    vertical-align: top;
-}
- */
-/* .contact-reason {
-    width: 561px;
+
+.contact-reason {
+    width: 329px;
     height: 37px;
     background-color: var(--Withe);
     border: 1px solid var(--Grayish-Navi);
@@ -196,52 +183,71 @@ main {
     font-size: 14px;
     font-weight: 400;
 }
- */
-/* .textarea {
-    box-sizing: border-box;
-    width: 561px;
-    height: 191px;
+
+.textarea {
+    width: 329px;
+    height: 148px;
     border: 1px solid var(--Grayish-Navi);
     border-radius: 4px;
 }
- */
-/* .button {
-    width: 123px;
-    height: 47px;
+
+.button {
+    width: 76px;
+    height: 33px;
     background-color: var(--Ligh-Grayish-Green);
     color: var(--Grayish-Navi);
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
+    align-self: flex-end;
 }
- */
+
+.hidden-mobile {
+    display: none;
+}
+
 /* Gym activities */
 
-/* .fifth-section {
-    width: 934px;
-    margin: 0 auto 65px;
+.fifth-section {
+    margin-bottom: 30px;
 }
- */
-/* .activities-list {
-    display: inline-block;
-    width: 176px;
-    margin-right: 117px;
-    padding: 34px 0;
-    vertical-align: bottom;
-    list-style: disc inside;
+
+.activities-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
- */
-/* .activities-item {
-    margin-bottom: 13px;
-    font-size: 24px;
+
+.activities-list {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+.activities-item {
+    font-size: 14px;
     font-weight: 900;
+    margin-bottom: 18px;
 }
- */
+
+.first-row {
+    margin-right: 30px;
+}
+
+.second-row {
+    align-self: center;
+}
+
+.last-item {
+    margin-bottom: 0;
+}
 
 .img-activities {
-    width: 336px;
-    height: 187px;
+   width: 90%;
+    max-width: 370px;
 }
 
 /* Memberships */
@@ -377,13 +383,11 @@ main {
         margin-right: 35px;
     }
 
-    /* Third Section */
-
     /* About Mega Rocket */
 
     .third-section {
         margin-bottom: 53px;
-        padding: 0;
+        padding: 0 14px 30px 14px;
     }
 
     .first-article-about {
@@ -407,14 +411,10 @@ main {
     }
 
     .first-p-about {
-        width: 80%;
-        max-width: 370px;
-        margin-bottom: 7px;
-        font-size: 15px;
         text-align: end;
     }
 
-    .second-p-about {
+    .first-p-about, .second-p-about {
         width: 80%;
         max-width: 370px;
         margin-bottom: 7px;
@@ -425,9 +425,90 @@ main {
        display: none;
     }
 
+    /* Get in touch */
 
-    /* 
-     */
+.fourth-section {
+    margin-bottom: 80px;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 644px;
+    margin: 0 auto;
+}
+
+.first-container-form, .second-container-form {
+    justify-content: flex-start;
+    margin: 0;
+    width: 292px;
+}
+
+.input-form {
+    width: 292px;
+}
+
+.contact-reason {
+    width: 292px;
+}
+
+.textarea {
+    width: 292px;
+    height: 168px;
+}
+
+.button {
+    display: block;
+    width: 123px;
+    height: 47px;
+    align-self: flex-start;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Activities */
+
+.fifth-section {
+    margin-bottom: 76px;
+}
+
+.activities-container {
+    justify-content: space-evenly;
+}
+
+.activities-list {
+    display: block;
+    justify-content: center;
+    flex-basis: content;
+    margin-bottom: 0;
+}
+
+.activities-item {
+    font-size: 14px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.first-row {
+    margin-right: 0;
+}
+
+.second-row {
+    align-self: center;
+}
+
+.img-activities {
+   width: 370px;
+}
+
+
+
+
+
+
     /* .first-article-about {
         box-sizing: border-box;
         margin-bottom: 24px;
@@ -502,7 +583,7 @@ main {
     }
      */
     /* About-Mega-Rocket */
-    
+
     /* .second-section {
         width: 959px;
         height: 469px;
@@ -556,7 +637,7 @@ main {
     }
      */
     /* About Mega Rocket */
-    
+
     /* .third-section {
         width: 1026px;
         height: 610px;

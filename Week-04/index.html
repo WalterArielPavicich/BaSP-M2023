@@ -161,11 +161,11 @@
                     </article>
                 </div>
             </section>
-            <!--<section class="fourth-section">
+            <section class="fourth-section">
                 <h2 class="h2-title">
                     Get in touch
                 </h2>
-                <form action="form_submit.php" method="post">
+                <form class="form-container" action="form_submit.php" method="post">
                     <div class="first-container-form">
                         <div class="label-input">
                             <label class="label-form-left" for="first-name">
@@ -185,7 +185,7 @@
                             </label>
                             <input class="input-form placeholder" type="email" id="email-address" placeholder="Enter address">
                         </div>
-                        <input class="button" type="submit" value="Submit">
+                        <input class="button hidden-mobile" type="submit" value="Submit">
                     </div>
                     <div class="second-container-form">
                         <div class="label-input">
@@ -213,6 +213,7 @@
                             </label>
                             <textarea id="message" class="textarea placeholder" placeholder="Enter your message"></textarea>
                         </div>
+                        <input class="button hidden" type="submit" value="Submit">
                     </div>
                 </form>
             </section>
@@ -220,26 +221,32 @@
                 <h2 class="h2-title">
                     Gym Activities
                 </h2>
-                <ul class="activities-list">
-                    <li class="activities-item">
-                        Crossfit
-                    </li>
-                    <li class="activities-item">
-                        Spinning
-                    </li>
-                    <li class="activities-item">
-                        Functional
-                    </li>
-                    <li class="activities-item">
-                        Fitness
-                    </li>
-                    <li class="activities-item">
-                        Boxing
-                    </li>
-                </ul>
-                <img class="img-activities" src="../assets/activities-image.svg" alt="activities image">
+                <div class="activities-container">
+                    <ul class="activities-list">
+                        <div class="first-row">
+                            <li class="activities-item">
+                                Crossfit
+                            </li>
+                            <li class="activities-item">
+                                Spinning
+                            </li>
+                            <li class="activities-item last-item">
+                                Functional
+                            </li>
+                        </div>
+                        <div class="second-row">
+                            <li class="activities-item">
+                                Fitness
+                            </li>
+                            <li class="activities-item last-item">
+                                Boxing
+                            </li>
+                        </div>
+                    </ul>
+                    <img class="img-activities" src="../assets/activities-image.svg" alt="activities image">
+                </div>
             </section>
-            <section class="sixth-section">
+            <!--<section class="sixth-section">
                 <h2 class="h2-title">
                     Memberships
                 </h2>
