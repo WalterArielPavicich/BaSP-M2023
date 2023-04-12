@@ -21,10 +21,6 @@ footer {
     height: 17px;
 }
 
-.img-footer:nth-child(3) {
-    margin-right: 0;
-}
-
 .copyright {
     color: var(--White);
     font-size: 0.7em;
@@ -50,7 +46,6 @@ footer {
 
     footer {
         display: block;
-        width: 100%;
         text-align: center;
     }
 
@@ -60,11 +55,5 @@ footer {
 
     .social-media-icon {
         margin-right: 16px;
-    }
-
-    .copyright {
-        color: var(--White);
-        font-size: 14px;
-        font-weight: 700;
     }
 }

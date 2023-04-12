@@ -17,8 +17,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .mega-rocket-h1 {
@@ -36,9 +36,8 @@ main {
 }
 
 .mega-rocket-p {
-    text-align: center;
-    font-size: 1em;
     max-width: 500px;
+    text-align: center;
 }
 
 .img-first-section {
@@ -55,7 +54,7 @@ main {
 .h2-title {
     margin-bottom: 17px;
     font-size: 1.5em;
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
     text-decoration: underline;
     text-decoration-color: var(--Ligh-Grayish-Green);
@@ -86,9 +85,8 @@ main {
 }
 
 .article-title {
-    display: inline-block;
     font-size: 0.7em;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .features-p {
@@ -154,7 +152,6 @@ main {
 
 .label-form-left, .label-form-right {
     display: block;
-    flex-basis: content;
     margin-bottom: 7px;
     font-size: 0.7em;
     font-weight: 500;
@@ -229,7 +226,7 @@ main {
 
 .activities-item {
     font-size: 0.7em;
-    font-weight: 900;
+    font-weight: 700;
     margin-bottom: 18px;
 }
 
@@ -280,15 +277,15 @@ main {
 .latest-th {
     width: 15%;
     padding: 13px 13px;
+    vertical-align: middle;
     font-size: 0.6em;
     font-weight: 600;
-    vertical-align: middle;
 }
 
 .td-columns {
     padding: 13px 0;
-    text-align: center;
     vertical-align: middle;
+    text-align: center;
     font-size: 0.6em;
     font-weight: 600;
 }
@@ -304,6 +301,10 @@ main {
         justify-content: space-evenly;
         width: 55%;
         margin-bottom: 0;
+    }
+
+    .mega-rocket-h1 {
+        font-size: 2em;
     }
 
     .mega-rocket-h2 {
@@ -328,17 +329,9 @@ main {
 
     .h2-title {
         margin-bottom: 57px;
-        font-size: 1.5em;
-        font-weight: bold;
-        text-align: center;
-        text-decoration: underline;
-        text-decoration-color: var(--Ligh-Grayish-Green);
-        text-decoration-thickness: 4px;
     }
 
     .features-container {
-        display: flex;
-        flex-wrap: wrap;
         padding: 0 14px;
     }
 
@@ -392,24 +385,18 @@ main {
 
     /* About Mega Rocket */
 
-    .third-section {
-        margin-bottom: 53px;
-        padding: 0 14px 30px 14px;
-    }
-
-    .first-article-about {
+    .third-section, .first-article-about {
         margin-bottom: 53px;
     }
 
     .first-article-about, .second-article-about {
-        display: flex;
         flex-direction: row;
         justify-content: space-evenly;
 
     }
 
     .first-img-about, .second-img-about {
-        width: 243px;
+        max-width: 300px;
         margin-bottom: 0px;
     }
 
@@ -422,10 +409,7 @@ main {
     }
 
     .first-p-about, .second-p-about {
-        width: 80%;
-        max-width: 370px;
         margin-bottom: 0px;
-        font-size: 0.6em;
     }
 
     .button-about {
@@ -446,13 +430,7 @@ main {
         margin: 0 auto;
     }
 
-    .first-container-form {
-        justify-content: flex-start;
-        margin: 0;
-        width: 40%;
-    }
-
-    .second-container-form {
+    .first-container-form, .second-container-form {
         justify-content: flex-start;
         margin: 0;
         width: 40%;
@@ -464,7 +442,6 @@ main {
 
     .contact-reason {
         width: 100%;
-        height: 37px;
     }
 
     .textarea {
@@ -496,27 +473,18 @@ main {
 
     .activities-list {
         display: block;
-        justify-content: center;
         flex-basis: content;
         margin-bottom: 0;
+        list-style: disc;
     }
 
     .activities-item {
         font-size: 1.2em;
-        font-weight: 900;
         margin-bottom: 10px;
     }
 
     .first-row {
         margin-right: 0;
-    }
-
-    .second-row {
-        align-self: center;
-    }
-
-    .img-activities {
-        max-width: 370px;
     }
 }
 
@@ -546,7 +514,6 @@ main {
     }
 
     .img-first-section {
-        width: 45%;
         max-width: 500px;
      }
 
@@ -558,21 +525,6 @@ main {
 
     .h2-title {
         margin-bottom: 54px;
-    }
-
-    .features-article {
-        width:40%;
-    }
-
-    .third-article, .fourth-article {
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-    }
-
-    .img-title-container {
-        margin-bottom: 21px;
-        margin-left: 0;
     }
 
      .icon-features {
@@ -602,7 +554,7 @@ main {
     }
 
     .first-img-about, .second-img-about {
-        width: 470px;
+        max-width: 470px;
     }
 
     .first-p-about, .second-p-about {
@@ -613,13 +565,12 @@ main {
     /* Get in touch */
 
     .fourth-section {
-        margin-bottom: 80px;
+        margin-bottom: 65px;
     }
 
     .form-container {
         max-width: none;
     }
-
 
     .first-container-form {
         width: 30%;
@@ -639,30 +590,8 @@ main {
         margin-bottom: 65px;
     }
 
-    .activities-container {
-        justify-content: space-evenly;
-    }
-
-    .activities-list {
-        display: block;
-        justify-content: center;
-        flex-basis: content;
-        margin-bottom: 0;
-    }
-
-    .activities-item {
-        margin-bottom: 10px;
-    }
-
-    .first-row {
-        margin-right: 0;
-    }
-
-    .second-row {
-        align-self: center;
-    }
-
     .img-activities {
+        width: 60%;
         max-width: 640px;
     }
 }

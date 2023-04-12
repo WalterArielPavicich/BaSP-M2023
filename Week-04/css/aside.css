@@ -7,14 +7,14 @@ aside {
     /* Nav-Aside */
 
     .aside {
+        position: fixed;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        position: fixed;
-        align-items: center;
         width: 313px;
         height: 100%;
         padding-top: 98px;
+        align-items: center;
         background-color: var(--Ligh-Grayish-Green);
     }
 
@@ -23,11 +23,7 @@ aside {
         margin-top: 12px;
     }
 
-    .nav-list {
-    }
-
     .nav-item {
-        box-sizing: border-box;
         width: 263px;
         margin-bottom: 17px;
         background-color: var(--White);
@@ -35,9 +31,11 @@ aside {
     }
 
     .nav-btn {
-        display: block;
-        margin-left: 79px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
         padding: 8px 0px;
+        margin-left: 79px;
         text-decoration: none;
     }
 
@@ -48,8 +46,8 @@ aside {
     .text-btn {
         display: inline-block;
         vertical-align: top;
+        font-size: 1em;
         font-weight: 900;
-        font-size: 20px;
     }
 
     /* Nav-Contact-Info */
@@ -62,7 +60,7 @@ aside {
     .contact-info-title {
         margin-bottom: 39px;
         color: var(--White);
-        font-size: 20px;
+        font-size: 1em;
         font-weight: 900;
         text-align: center;
         text-underline-offset: 4px;
@@ -71,18 +69,19 @@ aside {
     }
 
     .contact-info-item {
+        display: flex;
+        justify-content: start;
+        align-items: center;
         margin-bottom: 23px;
     }
 
     .contact-info-icons {
         margin-right: 12px;
-        vertical-align: top;
     }
 
     .contact-info-text {
-        display: inline-block;
         width: 212px;
-        font-size: 20px;
+        font-size: 1em;
         font-weight: 400;
     }
 }
