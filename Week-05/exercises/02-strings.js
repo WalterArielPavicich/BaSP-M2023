@@ -59,7 +59,8 @@ console.log(space);
 var longString = 'software developers';
 
 var firstLetterUpperCase = longString.substring(0, 1).toUpperCase() + longString.substring(1, longString.indexOf(' '));
-var secondLetterUpperCase = longString.substring(longString.indexOf(' '), longString.indexOf(' ') + 2).toUpperCase() + longString.substring(longString.indexOf(' ') + 2);
+var secondLetterUpperCase = longString.substring(longString.indexOf(' '), longString.indexOf(' ') + 2).toUpperCase()
+                            + longString.substring(longString.indexOf(' ') + 2);
 
 var sumWords = firstLetterUpperCase + secondLetterUpperCase;
 
