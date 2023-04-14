@@ -29,3 +29,18 @@ adding flexbox tools to the layout to create responsive design using the Mobile 
 Project: https://walterarielpavicich.github.io/BaSP-M2023/Week-04/index.html
 
 ---
+
+## **Week 05**
+
+javascript exercises on the following topics:
+
+    01. variables and operators.
+    02. strings.
+    03. arrays.
+    04. if-else.
+    05. for.
+    06. functions.
+
+Project: https://walterarielpavicich.github.io/BaSP-M2023/Week-05/index.html
+
+---
