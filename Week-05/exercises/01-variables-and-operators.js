@@ -6,20 +6,20 @@
 var firstNumber = 7;
 var secondNumber = 9;
 
-var resultadoSuma = firstNumber + secondNumber;
+var sumResult = firstNumber + secondNumber;
 
-console.log('Ejercicio 1.a');
-console.log(resultadoSuma);
+console.log('Exercise 1.a');
+console.log(sumResult);
 
 //  b. Crear dos variables de tipo String y concatenarlas guardando el resultado en una 3er variable.
 
-var nombre = 'Walter Ariel';
-var apellido = ' Pavicich';
+var firstName = 'Walter Ariel';
+var lastName = ' Pavicich';
 
-var nombreCompleto = nombre + apellido;
+var fullName = firstName + lastName;
 
-console.log('Ejercicio 1.b');
-console.log(nombreCompleto);
+console.log('Exercise 1.b');
+console.log(fullName);
 
 //  c. Crear dos variables de tipo String y sumar el largo de cada variable (cantidad de letras del string)
 //     guardando el resultado de la suma en una 3er variable (utilizar length).
@@ -27,7 +27,7 @@ console.log(nombreCompleto);
 var firstSting = 'Radium';
 var secondString = 'Rocket';
 
-var sumaStrings = firstSting.length + secondString.length;
+var sumStrings = firstSting.length + secondString.length;
 
-console.log('Ejercicio 1.c');
-console.log(sumaStrings);
+console.log('Exercise 1.c');
+console.log(sumStrings);
