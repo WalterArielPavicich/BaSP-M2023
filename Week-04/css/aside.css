@@ -34,8 +34,7 @@ aside {
         display: flex;
         justify-content: start;
         align-items: center;
-        padding: 8px 0px;
-        margin-left: 79px;
+        padding: 8px 90px;
         text-decoration: none;
     }
 
@@ -52,10 +51,10 @@ aside {
 
     /* Nav-Contact-Info */
 
-    .contact-info-container {
+ /*    .contact-info-container {
         width: 253px;
         margin: 0 auto;
-    }
+    } */
 
     .contact-info-title {
         margin-bottom: 39px;
@@ -73,6 +72,7 @@ aside {
         justify-content: start;
         align-items: center;
         margin-bottom: 23px;
+        padding: 0 51px;
     }
 
     .contact-info-icons {
@@ -80,7 +80,6 @@ aside {
     }
 
     .contact-info-text {
-        width: 212px;
         font-size: 1em;
         font-weight: 400;
     }
