@@ -1,12 +1,12 @@
+// For
+
 //  a. Crear un array que contenga 5 palabras y recorrer dicho array utilizando un bucle for de
 //     JavaScript para mostrar una alerta utilizando cada una de las palabras.
 
 var countries = ['argentina', 'france', 'brazil', 'croatia', 'morocco'];
 
-console.log('Exercise 5.a');
-
 for(var i = 0; i < countries.length; i++) {
-    console.log(countries[i]);
+   alert(countries[i]);
 }
 
 //  b. Al array anterior convertir la primera letra de cada palabra en mayúscula y mostrar una
@@ -14,10 +14,9 @@ for(var i = 0; i < countries.length; i++) {
 
 var countries = ['argentina', 'france', 'brazil', 'croatia', 'morocco'];
 
-console.log('Exercise 5.b');
-
 for(var i = 0; i < countries.length; i++) {
-    console.log(countries[i].substring(0,1).toUpperCase() + countries[i].substring(1));
+    var firstUpperCase = countries[i].substring(0,1).toUpperCase() + countries[i].substring(1);
+    alert(firstUpperCase);
 }
 
 //  c. Crear una variable llamada “sentence” que tenga un string vacío, luego al array del punto a)
@@ -31,8 +30,7 @@ for(var i = 0; i < countries.length; i++) {
     sentence += countries[i];
 }
 
-console.log('Exercise 5.c');
-console.log(sentence);
+alert(sentence);
 
 //  d. Crear un array vacío y con un bucle for de 10 repeticiones. Llenar el array con el número
 //     de la repetición, es decir que al final de la ejecución del bucle for debería haber 10

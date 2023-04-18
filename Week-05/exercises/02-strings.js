@@ -13,22 +13,20 @@ console.log(strA.toUpperCase());
 
 var strB = 'characters';
 
-var cutCharacter = strB.substring(0, 5);
+var cutCharacterB = strB.substring(0, 5);
 
 console.log('Exercise 2.b');
-console.log(cutCharacter);
+console.log(cutCharacterB);
 
 //  c. Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con los
 //     últimos 3 caracteres guardando el resultado en una nueva variable (utilizar substring).
 
 var strC = 'characters';
 
-var cuttCharacter = strC.substring(7);
-var cutttCharacter = strC.substring(strC.length - 3);
+var cutCharacterC = strC.substring(strC.length - 3);
 
 console.log('Exercise 2.c');
-console.log(cuttCharacter);
-console.log(cutttCharacter);
+console.log(cutCharacterC);
 
 //  d. Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con la
 //     primera letra en mayúscula y las demás en minúscula. Guardar el resultado en una nueva variable
@@ -58,11 +56,15 @@ console.log(space);
 
 var longString = 'software developers';
 
-var firstLetterUpperCase = longString.substring(0, 1).toUpperCase() + longString.substring(1, longString.indexOf(' '));
-var secondLetterUpperCase = longString.substring(longString.indexOf(' '), longString.indexOf(' ') + 2).toUpperCase()
-                            + longString.substring(longString.indexOf(' ') + 2);
+var firstLetterUpperCase = longString.substring(0, 1).toUpperCase();
+var addRestLowerCaseA = longString.substring(1, longString.indexOf(' '));
+var joinWordA = firstLetterUpperCase + addRestLowerCaseA;
 
-var sumWords = firstLetterUpperCase + secondLetterUpperCase;
+var secondLetterUpperCase = longString.substring(longString.indexOf(' '), longString.indexOf(' ') + 2).toUpperCase();
+var addRestLowerCaseB = longString.substring(longString.indexOf(' ') + 2);
+var joinWordB = secondLetterUpperCase + addRestLowerCaseB;
+
+var sumWords = joinWordA + joinWordB;
 
 console.log('Exercise 2.f');
 console.log(sumWords);

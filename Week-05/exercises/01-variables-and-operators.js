@@ -5,7 +5,6 @@
 
 var firstNumber = 7;
 var secondNumber = 9;
-
 var sumResult = firstNumber + secondNumber;
 
 console.log('Exercise 1.a');
@@ -15,7 +14,6 @@ console.log(sumResult);
 
 var firstName = 'Walter Ariel';
 var lastName = ' Pavicich';
-
 var fullName = firstName + lastName;
 
 console.log('Exercise 1.b');
@@ -26,7 +24,6 @@ console.log(fullName);
 
 var firstSting = 'Radium';
 var secondString = 'Rocket';
-
 var sumStrings = firstSting.length + secondString.length;
 
 console.log('Exercise 1.c');
