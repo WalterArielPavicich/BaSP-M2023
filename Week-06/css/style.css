@@ -1,0 +1,53 @@
+/* Variables */
+
+:root {
+    --Grayish-Navi: #373867;
+    --Ligh-Grayish-Green: #AACE9B;
+    --White : #FFFFFF;
+}
+
+/* Universal Selector */
+
+* {
+    box-sizing: border-box;
+    color: var(--Grayish-Navi);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* Element-Selectors */
+
+body {
+    width: 100%;
+    background-color: var(--White);
+    font-family: 'Roboto' , 'sans-serif';
+}
+
+input {
+    box-shadow: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 1025px) {
+
+    body {
+        width: 100%;
+        background-color: var(--White);
+        overflow-x: hidden;
+    }
+
+    .general-container {
+        display: flex;
+    }
+
+    .main-footer-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 313px;
+        margin-top: 98px;
+    }
+}

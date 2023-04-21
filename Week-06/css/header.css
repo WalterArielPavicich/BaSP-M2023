@@ -1,0 +1,42 @@
+header {
+    position: fixed;
+    width: 100%;
+    height: 72px;
+    background-color: var(--Grayish-Navi);
+    z-index: 1;
+}
+
+.header-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-logo {
+    width: 143px;
+    height: 33px;
+    padding-left: 10px;
+}
+
+.hamburguer-menu {
+    padding-right: 10px;
+}
+
+@media only screen and (min-width: 1025px) {
+
+    header {
+        height: 98px;
+    }
+
+    .img-logo {
+        width: 194px;
+        height: 41px;
+        margin: 28px 0 28px 28px;
+    }
+
+    .hamburguer-menu {
+        display: none;
+    }
+}
