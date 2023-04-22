@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/aside.css">
+    <link rel="stylesheet" href="../css/content.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header-container">
+        <div>
+            <img class="img-logo" src="../../assets/logo.svg" alt="Logo">
+        </div>
+        <nav class="buttons-container">
+            <ul class="nav-list">
+                <li class="item-button home">
+                    <a class="btn-header" href="#">
+                        <img class="img-btn" src="../../assets/home-icon.svg" alt="home icon">
+                        <span class="text-btn">
+                            Home
+                        </span>
+                    </a>
+                </li>
+                <li class="item-button signup">
+                    <a class="btn-header" href="#">
+                        <img class="img-btn" src="../../assets/sign-up-icon.svg" alt="sign up icon">
+                        <span class="text-btn">
+                            Sign Up
+                        </span>
+                    </a>
+                </li>
+                <li class="item-button login">
+                    <a class="btn-header" href="#">
+                        <img class="img-btn" src="../../assets/sign-in-icon.svg" alt="login icon">
+                        <span class="text-btn">
+                            Login
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="aside">
+        <nav class="nav-aside">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-btn" href="#">
+                        <img class="img-btn" src="../../assets/home-icon.svg" alt="home icon">
+                        <span class="text-btn">
+                            Home
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-btn" href="#">
+                        <img class="img-btn" src="../../assets/sign-up-icon.svg" alt="sign up icon">
+                        <span class="text-btn">
+                            Sign Up
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-btn" href="#">
+                        <img class="img-btn" src="../../assets/sign-in-icon.svg" alt="sign in icon">
+                        <span class="text-btn">
+                            Sign In
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="contact-info-container">
+            <h2 class="contact-info-title">
+                Contact information
+            </h2>
+            <ul>
+                <li class="contact-info-item">
+                    <img class="contact-info-icons" src="../../assets/email-icon.svg" alt="address icon">
+                    <a class="contact-info-text" href="#">
+                        information@untitled.tld
+                    </a>
+                </li>
+                <li class="contact-info-item">
+                    <img class="contact-info-icons" src="../../assets/phone-number-icon.svg"
+                        alt="phone number icon">
+                    <span class="contact-info-text" >
+                        (000) 000-0000
+                    </span>
+                </li>
+                <li class="contact-info-item">
+                    <img class="contact-info-icons" src="../../assets/address-icon.svg"
+                        alt="home icon">
+                    <span class="contact-info-text" >
+                        1234 Somewhere Road #8254 Nashville, TN
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <main class="login-main">
+        <div class="card-container">
+            <h2 class="h2-title">
+                Login
+            </h2>
+            <form class="login-form" action="form_submit.php" method="post">
+                <div class="label-input">
+                    <label class="label-form-left" for="email">
+                        Email
+                    </label>
+                    <input id="email" class="input-form placeholder" type="text"
+                        placeholder="Enter your email...">
+                </div>
+                <div class="label-input">
+                    <label class="label-form-left" for="password">
+                        Password
+                    </label>
+                    <input id="password" class="input-form placeholder" type="text"
+                        placeholder="Enter your password...">
+                </div>
+            </form>
+            <input class="button hidden login-button" type="submit" value="Submit">
+        </div>
+    </main>
+</body>
+</html>

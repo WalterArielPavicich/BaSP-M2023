@@ -2,6 +2,14 @@ main {
     padding-top: 72px;
 }
 
+.login-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 /* Mega-Rocket-Web */
 
 .first-section {
@@ -494,6 +502,10 @@ main {
 
     main {
         padding: 0;
+    }
+
+    .login-main {
+        margin-left: 313px;
     }
 
     /* First Section */

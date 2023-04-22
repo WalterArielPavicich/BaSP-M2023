@@ -8,7 +8,6 @@ header {
 
 .header-container {
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,8 +19,41 @@ header {
     padding-left: 10px;
 }
 
-.hamburguer-menu {
+.buttons-container {
+    align-items: center;
     padding-right: 10px;
+}
+
+.item-button {
+    background-color: var(--White);
+    border-radius: 5px;
+}
+
+.home, .signup {
+    margin-bottom: 6px;
+}
+
+.home {
+    display: none;
+}
+
+.btn-header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-decoration: none;
+    padding: 2px 20px;
+}
+
+.img-btn {
+    margin-right: 10px;
+}
+
+.text-btn {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1em;
+    font-weight: 900;
 }
 
 @media only screen and (min-width: 1025px) {
@@ -36,7 +68,7 @@ header {
         margin: 28px 0 28px 28px;
     }
 
-    .hamburguer-menu {
+    .buttons-container {
         display: none;
     }
 }
