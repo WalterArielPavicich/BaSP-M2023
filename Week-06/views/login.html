@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="../css/aside.css">
     <link rel="stylesheet" href="../css/content.css">
     <link rel="stylesheet" href="../css/login.css">
-    <title>Document</title>
+    <script src="../js/login.js"></script>
+    <title>Login Page</title>
 </head>
 <body>
     <header class="header-container">
@@ -20,7 +21,7 @@
         <nav class="buttons-container">
             <ul class="nav-list">
                 <li class="item-button home">
-                    <a class="btn-header" href="#">
+                    <a class="btn-header" href="../views/index.html">
                         <img class="img-btn" src="../../assets/home-icon.svg" alt="home icon">
                         <span class="text-btn">
                             Home
@@ -28,7 +29,7 @@
                     </a>
                 </li>
                 <li class="item-button signup">
-                    <a class="btn-header" href="#">
+                    <a class="btn-header" href="../views/sign-up.html">
                         <img class="img-btn" src="../../assets/sign-up-icon.svg" alt="sign up icon">
                         <span class="text-btn">
                             Sign Up
@@ -36,7 +37,7 @@
                     </a>
                 </li>
                 <li class="item-button login">
-                    <a class="btn-header" href="#">
+                    <a class="btn-header" href="../views/login.html">
                         <img class="img-btn" src="../../assets/sign-in-icon.svg" alt="login icon">
                         <span class="text-btn">
                             Login
@@ -50,7 +51,7 @@
         <nav class="nav-aside">
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a class="nav-btn" href="#">
+                    <a class="nav-btn" href="../views/index.html">
                         <img class="img-btn" src="../../assets/home-icon.svg" alt="home icon">
                         <span class="text-btn">
                             Home
@@ -58,7 +59,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-btn" href="#">
+                    <a class="nav-btn" href="../views/sign-up.html">
                         <img class="img-btn" src="../../assets/sign-up-icon.svg" alt="sign up icon">
                         <span class="text-btn">
                             Sign Up
@@ -66,10 +67,10 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-btn" href="#">
+                    <a class="nav-btn" href="../views/login.html">
                         <img class="img-btn" src="../../assets/sign-in-icon.svg" alt="sign in icon">
                         <span class="text-btn">
-                            Sign In
+                            Login
                         </span>
                     </a>
                 </li>
@@ -115,6 +116,9 @@
                     </label>
                     <input id="email" class="input-form placeholder" type="text"
                         placeholder="Enter your email...">
+                    <p class="invalid-field">
+                        Invalid email
+                    </p>
                 </div>
                 <div class="label-input">
                     <label class="label-form-left" for="password">
@@ -122,9 +126,12 @@
                     </label>
                     <input id="password" class="input-form placeholder" type="text"
                         placeholder="Enter your password...">
+                    <p class="invalid-field">
+                        Invalid password
+                    </p>
                 </div>
             </form>
-            <input class="button hidden login-button" type="submit" value="Submit">
+            <input class="button hidden login-button" type="submit" value="Login">
         </div>
     </main>
 </body>

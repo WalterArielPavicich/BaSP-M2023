@@ -27,6 +27,12 @@
     width: 100%;
 }
 
+.invalid-field {
+    display: none;
+    font-size: 14px;
+    color: red;
+}
+
 .login-button {
     align-self: center;
 }

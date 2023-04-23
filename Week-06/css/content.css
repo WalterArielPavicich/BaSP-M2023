@@ -2,11 +2,14 @@ main {
     padding-top: 72px;
 }
 
-.login-main {
+.signup-main, .login-main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.login-main {
     height: 100vh;
 }
 
@@ -504,7 +507,7 @@ main {
         padding: 0;
     }
 
-    .login-main {
+    .login-main, .signup-main {
         margin-left: 313px;
     }
 
