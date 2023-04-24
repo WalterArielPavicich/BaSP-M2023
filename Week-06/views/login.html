@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../css/aside.css">
     <link rel="stylesheet" href="../css/content.css">
     <link rel="stylesheet" href="../css/login.css">
-    <script src="../js/login.js"></script>
     <title>Login Page</title>
 </head>
 <body>
@@ -116,7 +115,7 @@
                     </label>
                     <input id="email" class="input-form placeholder" type="text"
                         placeholder="Enter your email...">
-                    <p class="invalid-field">
+                    <p id="error-email" class="invalid-field ds" >
                         Invalid email
                     </p>
                 </div>
@@ -126,13 +125,14 @@
                     </label>
                     <input id="password" class="input-form placeholder" type="text"
                         placeholder="Enter your password...">
-                    <p class="invalid-field">
+                    <p id="error-pass" class="invalid-field ds">
                         Invalid password
                     </p>
                 </div>
+                <input id="btn-login" class="button hidden login-button" type="submit" value="Login">
             </form>
-            <input class="button hidden login-button" type="submit" value="Login">
         </div>
     </main>
+    <script src="../js/login.js"></script>
 </body>
 </html>
