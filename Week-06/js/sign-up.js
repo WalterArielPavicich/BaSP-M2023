@@ -111,7 +111,7 @@ dniField.addEventListener('blur', blurValidateDNI);
 dniField.addEventListener('focus', focusValidateDNI);
 
 function blurValidateDNI() {
-    if(dniField.value.length <= 7 || onlyNumbers(dniField) === false) {
+    if((dniField.value.length <= 7 || dniField.value.length >= 9) || onlyNumbers(dniField) === false) {
         dniField.classList.add("red-border");
         errorDNI.classList.remove("ds");
     }
@@ -340,70 +340,70 @@ function validateFieldToArray() {
     if(lastNameField.classList.contains('red-border') || lastNameField.value === '') {
         lastNameField.classList.add('red-border');
         errorLastName.classList.remove('ds');
-        arrayIncorrectValue.push("Invalid Last name");
+        arrayIncorrectValue.push("\nInvalid Last name");
     }else {
         arrayCorrectValue.push(lastNameField.value);
     }
     if(dniField.classList.contains('red-border') || dniField.value === '') {
         dniField.classList.add('red-border');
         errorDNI.classList.remove('ds');
-        arrayIncorrectValue.push("Invalid DNI");
+        arrayIncorrectValue.push("\nInvalid DNI");
     }else {
         arrayCorrectValue.push(dniField.value);
     }
     if(dateField.classList.contains('red-border') || dateField.value === '') {
         dateField.classList.add('red-border');
         errorDate.classList.remove('ds');
-        arrayIncorrectValue.push("Invalid Date");
+        arrayIncorrectValue.push("\nInvalid Date");
     }else {
         arrayCorrectValue.push(dateField.value);
     }
     if(phoneNumberField.classList.contains('red-border') || phoneNumberField.value === '') {
         phoneNumberField.classList.add('red-border');
         errorPhoneNumber.classList.remove('ds');
-        arrayIncorrectValue.push("Invalid Phone Number");
+        arrayIncorrectValue.push("\nInvalid Phone Number");
     }else {
         arrayCorrectValue.push(phoneNumberField.value);
     }
     if(addressField.classList.contains('red-border') || addressField.value === '') {
         addressField.classList.add('red-border');
         errorAddress.classList.remove('ds');
-        arrayIncorrectValue.push("Invalid Address");
+        arrayIncorrectValue.push("\nInvalid Address");
     }else {
         arrayCorrectValue.push(addressField.value);
     }
     if(cityField.classList.contains('red-border') || cityField.value === '') {
         cityField.classList.add('red-border');
         errorCity.classList.remove('ds');
-        arrayIncorrectValue.push("Invalid City");
+        arrayIncorrectValue.push("\nInvalid City");
     }else {
         arrayCorrectValue.push(cityField.value);
     }
     if(zipCodeField.classList.contains('red-border') || zipCodeField.value === '') {
         zipCodeField.classList.add('red-border');
         errorZipCode.classList.remove('ds');
-        arrayIncorrectValue.push("Invalid Zip Code");
+        arrayIncorrectValue.push("\nInvalid Zip Code");
     }else {
         arrayCorrectValue.push(zipCodeField.value);
     }
     if(emailField.classList.contains('red-border') || emailField.value === '') {
         emailField.classList.add('red-border');
         errorEmail.classList.remove('ds');
-        arrayIncorrectValue.push("Invalid Email");
+        arrayIncorrectValue.push("\nInvalid Email");
     }else {
         arrayCorrectValue.push(emailField.value);
     }
     if(passField.classList.contains('red-border') || passField.value === '') {
         passField.classList.add('red-border');
         errorPass.classList.remove('ds');
-        arrayIncorrectValue.push("Invalid Password");
+        arrayIncorrectValue.push("\nInvalid Password");
     }else {
         arrayCorrectValue.push(passField.value);
     }
     if(repeatPassField.classList.contains('red-border') || repeatPassField.value === '') {
         repeatPassField.classList.add('red-border');
         errorRepeatPass.classList.remove('ds');
-        arrayIncorrectValue.push("Invalid Repeat Password");
+        arrayIncorrectValue.push("\nInvalid Repeat Password");
     }else {
         arrayCorrectValue.push(repeatPassField.value);
     }
