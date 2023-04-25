@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../css/aside.css">
     <link rel="stylesheet" href="../css/content.css">
     <link rel="stylesheet" href="../css/sign-up.css">
-    <script src="../js/sign-up.js"></script>
     <title>Sign Up Page</title>
 </head>
 <body>
@@ -117,7 +116,7 @@
                         </label>
                         <input id="name" class="input-form placeholder" type="text"
                             placeholder="Enter your name...">
-                        <p class="invalid-field">
+                        <p id="name-error" class="invalid-field ds">
                             Invalid name
                         </p>
                     </div>
@@ -125,9 +124,9 @@
                         <label class="label-form-left" for="last name">
                             Last name
                         </label>
-                        <input id="last name" class="input-form placeholder" type="text"
+                        <input id="lastname" class="input-form placeholder" type="text"
                             placeholder="Enter your last name...">
-                        <p class="invalid-field">
+                        <p id="lastname-error" class="invalid-field ds">
                             Invalid last name
                         </p>
                     </div>
@@ -137,7 +136,7 @@
                         </label>
                         <input id="dni" class="input-form placeholder" type="text"
                             placeholder="Enter your DNI...">
-                        <p class="invalid-field">
+                        <p id="dni-error" class="invalid-field ds">
                             Invalid DNI
                         </p>
                     </div>
@@ -145,9 +144,9 @@
                         <label class="label-form-left" for="date of birth">
                             Date of birth
                         </label>
-                        <input id="date of birth" class="input-form placeholder" type="text"
+                        <input id="dateofbirth" class="input-form placeholder" type="date"
                             placeholder="dd/mm/aaaa">
-                        <p class="invalid-field">
+                        <p id="date-error" class="invalid-field ds">
                             Invalid date of birth
                         </p>
                     </div>
@@ -155,9 +154,9 @@
                         <label class="label-form-left" for="phone number">
                             Phone number
                         </label>
-                        <input id="phone number" class="input-form placeholder" type="text"
+                        <input id="phonenumber" class="input-form placeholder" type="text"
                             placeholder="Enter your phone number...">
-                        <p class="invalid-field">
+                        <p id="phone-error" class="invalid-field ds">
                             Invalid phone number
                         </p>
                     </div>
@@ -167,7 +166,7 @@
                         </label>
                         <input id="address" class="input-form placeholder" type="text"
                             placeholder="Enter your address...">
-                        <p class="invalid-field">
+                        <p id="address-error" class="invalid-field ds">
                             Invalid address
                         </p>
                     </div>
@@ -179,7 +178,7 @@
                         </label>
                         <input id="city" class="input-form placeholder" type="text"
                             placeholder="Enter your city...">
-                        <p class="invalid-field">
+                        <p id="city-error" class="invalid-field ds">
                             Invalid city
                         </p>
                     </div>
@@ -187,9 +186,9 @@
                         <label class="label-form-left" for="zip code">
                             Zip code
                         </label>
-                        <input id="zip code" class="input-form placeholder" type="text"
+                        <input id="zipcode" class="input-form placeholder" type="text"
                             placeholder="Enter your zip code...">
-                        <p class="invalid-field">
+                        <p id="zipcode-error" class="invalid-field ds">
                             Invalid zip code
                         </p>
                     </div>
@@ -199,7 +198,7 @@
                         </label>
                         <input id="email" class="input-form placeholder" type="text"
                             placeholder="Enter your email...">
-                        <p class="invalid-field">
+                        <p id="email-error" class="invalid-field ds">
                             Invalid email
                         </p>
                     </div>
@@ -207,9 +206,9 @@
                         <label class="label-form-left" for="password">
                             Password
                         </label>
-                        <input id="password" class="input-form placeholder" type="text"
+                        <input id="password" class="input-form placeholder" type="password"
                             placeholder="Enter your password...">
-                        <p class="invalid-field">
+                        <p id="pass-error" class="invalid-field ds">
                             Invalid password
                         </p>
                     </div>
@@ -217,16 +216,17 @@
                         <label class="label-form-left" for="repeat password">
                             Repeat password
                         </label>
-                        <input id="repeat password" class="input-form placeholder" type="text"
+                        <input id="repeatpass" class="input-form placeholder" type="password"
                             placeholder="Repeat your password...">
-                        <p class="invalid-field">
+                        <p id="repeatpass-error" class="invalid-field ds">
                             Invalid password
                          </p>
                     </div>
-                    <input class="button hidden signup-button" type="submit" value="Register">
+                    <input id="btn-register" class="button hidden signup-button" type="submit" value="Register">
                 </div>
             </form>
         </div>
     </main>
+    <script src="../js/sign-up.js"></script>
 </body>
 </html>

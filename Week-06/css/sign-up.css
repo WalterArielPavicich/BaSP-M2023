@@ -31,10 +31,17 @@
     width: 100%;
 }
 
+.red-border {
+    border: 1px solid red;
+}
+
 .invalid-field {
-    display: none;
     font-size: 14px;
     color: red;
+}
+
+.ds {
+    display: none;
 }
 
 .signup-button {
@@ -42,16 +49,6 @@
 }
 
 @media only screen and (min-width: 601px) {
-
-    .signup-form {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .left-container, .right-container {
-        width: 45%;
-    }
 
     .signup-button {
         display: block;
@@ -63,4 +60,15 @@
     .signup-container {
         margin-top: 108px;
     }
+
+    .signup-form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left-container, .right-container {
+        width: 45%;
+    }
+
 }

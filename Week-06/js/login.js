@@ -1,7 +1,3 @@
-// GENERAL VARIABLES //
-
-var form = document.querySelector(".login-form");
-
 // VALIDATE EMAIL //
 
 var emailField = document.querySelector("#email");
@@ -61,7 +57,34 @@ function focusValidatePass() {
     errorPass.classList.add("ds");
 }
 
-// VALIDATE SUBMIT //
+// VALIDATE SUMBIT //
+
+function validateFieldToArray() {
+
+    var arrayIncorrectValue = [];
+    var arrayCorrectValue = [];
+
+    if(emailField.classList.contains('red-border') || emailField.value === '') {
+        emailField.classList.add('red-border');
+        errorEmail.classList.remove('ds');
+        arrayIncorrectValue.push("Invalid Email");
+    }else {
+        arrayCorrectValue.push(emailField.value);
+    }
+    if(passField.classList.contains('red-border') || passField.value === '') {
+        passField.classList.add('red-border');
+        errorPass.classList.remove('ds');
+        arrayIncorrectValue.push("Invalid Password");
+    }else {
+        arrayCorrectValue.push(passField.value);
+    }
+
+    if (arrayIncorrectValue.length === 0) {
+        return arrayCorrectValue;
+    }else {
+        return arrayIncorrectValue;
+    }
+}
 
 var btnLogin = document.querySelector('#btn-login');
 
@@ -69,22 +92,5 @@ btnLogin.addEventListener('click', submitLogin);
 
 function submitLogin(e) {
     e.preventDefault();
-    if(emailExpression.test(emailField.value) && hasNumbersAndChar) {
-        alert("Email: " + emailField.value + " Password: " + passField.value);
-    }else if (!emailExpression.test(emailField.value) && hasNumbersAndChar() === false) {
-        emailField.classList.add("red-border");
-        errorEmail.classList.remove("ds");
-        passField.classList.add("red-border");
-        errorPass.classList.remove("ds");
-        alert("Invalid email and password");
-    }
-    else if(!emailExpression.test(emailField.value)) {
-        emailField.classList.add("red-border");
-        errorEmail.classList.remove("ds");
-        alert("Invalid Email");
-    }else {
-        passField.classList.add("red-border");
-        errorPass.classList.remove("ds");
-        alert("invalid password");
-    }
+    return alert(validateFieldToArray());
 }
