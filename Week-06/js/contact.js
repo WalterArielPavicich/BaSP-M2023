@@ -163,19 +163,19 @@ function validateFieldToArray() {
     }else {
         arrayCorrectValue.push("\n" + "Email: " + emailField.value);
     }
-    if(messageField.classList.contains('red-border') || messageField.value === '') {
-        messageField.classList.add('red-border');
-        errorMessage.classList.remove('ds');
-        arrayIncorrectValue.push("\nInvalid Message");
-    }else {
-        arrayCorrectValue.push("\n" + "Message: " + messageField.value);
-    }
     if(contactSelectField.classList.contains('red-border') || contactSelectField.value === defaultSelect.value) {
         contactSelectField.classList.add('red-border');
         errorContactSelect.classList.remove('ds');
         arrayIncorrectValue.push("\nInvalid Contact Reason");
     }else {
         arrayCorrectValue.push("\n" + "Contact Reason: " + contactSelectField.value);
+    }
+    if(messageField.classList.contains('red-border') || messageField.value === '') {
+        messageField.classList.add('red-border');
+        errorMessage.classList.remove('ds');
+        arrayIncorrectValue.push("\nInvalid Message");
+    }else {
+        arrayCorrectValue.push("\n" + "Message: " + messageField.value);
     }
 
     if (arrayIncorrectValue.length === 0) {
