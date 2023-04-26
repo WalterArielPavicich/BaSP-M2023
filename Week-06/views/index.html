@@ -220,24 +220,33 @@
                                     <label class="label-form-left" for="first-name">
                                         First name
                                     </label>
-                                    <input id="first-name" class="input-form placeholder" type="text"
+                                    <input id="name" class="input-form placeholder" type="text"
                                         placeholder="Enter name">
+                                    <p id="name-error" class="invalid-field ds">
+                                        Invalid name
+                                    </p>
                                 </div>
                                 <div class="label-input">
                                     <label class="label-form-left" for="last-name">
                                         Last name
                                     </label>
-                                    <input id="last-name" class="input-form placeholder" type="text"
+                                    <input id="lastname" class="input-form placeholder" type="text"
                                         placeholder="Enter last name">
+                                    <p id="lastname-error" class="invalid-field ds">
+                                        Invalid last name
+                                    </p>
                                 </div>
                                 <div class="label-input">
-                                    <label class="label-form-left" for="email-address">
+                                    <label class="label-form-left" for="email">
                                         Email address
                                     </label>
-                                    <input class="input-form placeholder" type="email" id="email-address"
+                                    <input id= "email" class="input-form placeholder" type="email"
                                         placeholder="Enter address">
+                                    <p id="email-error" class="invalid-field ds">
+                                        Invalid email
+                                    </p>
                                 </div>
-                                <input class="button hidden-mobile" type="submit" value="Submit">
+                                <input id="btn-contact" class="button hidden-mobile" type="submit" value="Send">
                             </div>
                             <div class="second-container-form">
                                 <div class="label-input">
@@ -245,19 +254,22 @@
                                         Contact reason
                                     </label>
                                     <select id="contact-reason" class="contact-reason placeholder" >
-                                        <option value="Choose contact reason" selected disabled hidden>
+                                        <option id="choose" value="Choose contact reason" selected disabled hidden>
                                             Choose contact reason
                                         </option>
-                                        <option value="I want to make a claim">
-                                            I want to make a claim
-                                        </option>
-                                        <option value="I want to realize a query or suggestions">
-                                            I want to realize a query or suggestions
-                                        </option>
-                                        <option value="I want to know the memberships and cost">
+                                        <option id="memberships" value="I want to know the memberships and cost">
                                             I want to know the memberships and cost
                                         </option>
+                                        <option id="suggestions" value="I want to realize a query or suggestions">
+                                            I want to realize a query or suggestions
+                                        </option>
+                                        <option id="claim" value="I want to make a claim">
+                                            I want to make a claim
+                                        </option>
                                     </select>
+                                    <p id="contact-error" class="invalid-field ds">
+                                        Invalid Selection
+                                    </p>
                                 </div>
                                 <div class="label-input">
                                     <label class="label-form-right" for="message">
@@ -265,8 +277,11 @@
                                     </label>
                                     <textarea id="message" class="textarea placeholder"
                                         placeholder="Enter your message"></textarea>
+                                    <p id="message-error" class="invalid-field ds">
+                                        Invalid Message
+                                    </p>
                                 </div>
-                                <input class="button hidden" type="submit" value="Submit">
+                                <input id="btn-contact" class="button hidden" type="submit" value="Send">
                             </div>
                         </form>
                     </section>
@@ -393,5 +408,6 @@
                 </footer>
             </div>
         </div>
+        <script src="../js/contact.js"></script>
     </body>
 </html>

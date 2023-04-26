@@ -69,14 +69,14 @@ function validateFieldToArray() {
         errorEmail.classList.remove('ds');
         arrayIncorrectValue.push("Invalid Email");
     }else {
-        arrayCorrectValue.push(emailField.value);
+        arrayCorrectValue.push("Email: " + emailField.value);
     }
     if(passField.classList.contains('red-border') || passField.value === '') {
         passField.classList.add('red-border');
         errorPass.classList.remove('ds');
         arrayIncorrectValue.push("\nInvalid Password");
     }else {
-        arrayCorrectValue.push(passField.value);
+        arrayCorrectValue.push("\n" + "Password: " + passField.value);
     }
 
     if (arrayIncorrectValue.length === 0) {

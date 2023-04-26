@@ -211,6 +211,19 @@ main {
     align-self: flex-end;
 }
 
+.red-border {
+    border: 1px solid red;
+}
+
+.invalid-field {
+    font-size: 14px;
+    color: red;
+}
+
+.ds {
+    display: none;
+}
+
 .hidden-mobile {
     display: none;
 }

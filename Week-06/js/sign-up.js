@@ -335,77 +335,77 @@ function validateFieldToArray() {
         errorName.classList.remove('ds');
         arrayIncorrectValue.push("Invalid Name");
     }else {
-        arrayCorrectValue.push(nameField.value);
+        arrayCorrectValue.push("Name: " + nameField.value);
     }
     if(lastNameField.classList.contains('red-border') || lastNameField.value === '') {
         lastNameField.classList.add('red-border');
         errorLastName.classList.remove('ds');
         arrayIncorrectValue.push("\nInvalid Last name");
     }else {
-        arrayCorrectValue.push(lastNameField.value);
+        arrayCorrectValue.push("\n" + "Last Name: " + lastNameField.value);
     }
     if(dniField.classList.contains('red-border') || dniField.value === '') {
         dniField.classList.add('red-border');
         errorDNI.classList.remove('ds');
         arrayIncorrectValue.push("\nInvalid DNI");
     }else {
-        arrayCorrectValue.push(dniField.value);
+        arrayCorrectValue.push("\n" + "DNI: " + dniField.value);
     }
     if(dateField.classList.contains('red-border') || dateField.value === '') {
         dateField.classList.add('red-border');
         errorDate.classList.remove('ds');
         arrayIncorrectValue.push("\nInvalid Date");
     }else {
-        arrayCorrectValue.push(dateField.value);
+        arrayCorrectValue.push("\n" + "Date of Birth: " + dateField.value);
     }
     if(phoneNumberField.classList.contains('red-border') || phoneNumberField.value === '') {
         phoneNumberField.classList.add('red-border');
         errorPhoneNumber.classList.remove('ds');
         arrayIncorrectValue.push("\nInvalid Phone Number");
     }else {
-        arrayCorrectValue.push(phoneNumberField.value);
+        arrayCorrectValue.push("\n" + "Phone Number: " + phoneNumberField.value);
     }
     if(addressField.classList.contains('red-border') || addressField.value === '') {
         addressField.classList.add('red-border');
         errorAddress.classList.remove('ds');
         arrayIncorrectValue.push("\nInvalid Address");
     }else {
-        arrayCorrectValue.push(addressField.value);
+        arrayCorrectValue.push("\n" + "Address: " + addressField.value);
     }
     if(cityField.classList.contains('red-border') || cityField.value === '') {
         cityField.classList.add('red-border');
         errorCity.classList.remove('ds');
         arrayIncorrectValue.push("\nInvalid City");
     }else {
-        arrayCorrectValue.push(cityField.value);
+        arrayCorrectValue.push("\n" + "City: " + cityField.value);
     }
     if(zipCodeField.classList.contains('red-border') || zipCodeField.value === '') {
         zipCodeField.classList.add('red-border');
         errorZipCode.classList.remove('ds');
         arrayIncorrectValue.push("\nInvalid Zip Code");
     }else {
-        arrayCorrectValue.push(zipCodeField.value);
+        arrayCorrectValue.push("\n" + "Zip Code: " + zipCodeField.value);
     }
     if(emailField.classList.contains('red-border') || emailField.value === '') {
         emailField.classList.add('red-border');
         errorEmail.classList.remove('ds');
         arrayIncorrectValue.push("\nInvalid Email");
     }else {
-        arrayCorrectValue.push(emailField.value);
+        arrayCorrectValue.push("\n" + "Email: " + emailField.value);
     }
     if(passField.classList.contains('red-border') || passField.value === '') {
         passField.classList.add('red-border');
         errorPass.classList.remove('ds');
         arrayIncorrectValue.push("\nInvalid Password");
     }else {
-        arrayCorrectValue.push(passField.value);
+        arrayCorrectValue.push("\n" + "Password: " + passField.value);
     }
     if(repeatPassField.classList.contains('red-border') || repeatPassField.value === '') {
         repeatPassField.classList.add('red-border');
         errorRepeatPass.classList.remove('ds');
         arrayIncorrectValue.push("\nInvalid Repeat Password");
     }else {
-        arrayCorrectValue.push(repeatPassField.value);
+        arrayCorrectValue.push("\n" + "Password Repeat: " + repeatPassField.value);
     }
 
     if (arrayIncorrectValue.length === 0) {
