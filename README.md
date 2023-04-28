@@ -89,3 +89,11 @@ adding javascript validations and DOM handling to login, sign-up pages and conta
 Project: https://walterarielpavicich.github.io/BaSP-M2023/Week-06/views/index.html
 
 ---
+
+## **Week-07**
+
+extend the forms so that when the confirmation buttons are pressed, the data loaded in them are sent to a web server by means of an HTTP request from JavaScript.
+
+Project: https://walterarielpavicich.github.io/BaSP-M2023/Week-07/views/index.html
+
+---

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/aside.css">
+    <link rel="stylesheet" href="../css/content.css">
+    <link rel="stylesheet" href="../css/sign-up.css">
+    <title>Sign Up Page</title>
+</head>
+<body>
+    <header class="header-container">
+        <div>
+            <img class="img-logo" src="../../assets/logo.svg" alt="Logo">
+        </div>
+        <nav class="buttons-container">
+            <ul class="nav-list">
+                <li class="item-button home">
+                    <a class="btn-header" href="../views/index.html">
+                        <img class="img-btn" src="../../assets/home-icon.svg" alt="home icon">
+                        <span class="text-btn">
+                            Home
+                        </span>
+                    </a>
+                </li>
+                <li class="item-button signup">
+                    <a class="btn-header" href="../views/sign-up.html">
+                        <img class="img-btn" src="../../assets/sign-up-icon.svg" alt="sign up icon">
+                        <span class="text-btn">
+                            Sign Up
+                        </span>
+                    </a>
+                </li>
+                <li class="item-button login">
+                    <a class="btn-header" href="../views/login.html">
+                        <img class="img-btn" src="../../assets/sign-in-icon.svg" alt="login icon">
+                        <span class="text-btn">
+                            Login
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="aside">
+        <nav class="nav-aside">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-btn" href="../views/index.html">
+                        <img class="img-btn" src="../../assets/home-icon.svg" alt="home icon">
+                        <span class="text-btn">
+                            Home
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-btn" href="../views/sign-up.html">
+                        <img class="img-btn" src="../../assets/sign-up-icon.svg" alt="sign up icon">
+                        <span class="text-btn">
+                            Sign Up
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-btn" href="../views/login.html">
+                        <img class="img-btn" src="../../assets/sign-in-icon.svg" alt="sign in icon">
+                        <span class="text-btn">
+                            Login
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="contact-info-container">
+            <h2 class="contact-info-title">
+                Contact information
+            </h2>
+            <ul>
+                <li class="contact-info-item">
+                    <img class="contact-info-icons" src="../../assets/email-icon.svg" alt="address icon">
+                    <a class="contact-info-text" href="#">
+                        information@untitled.tld
+                    </a>
+                </li>
+                <li class="contact-info-item">
+                    <img class="contact-info-icons" src="../../assets/phone-number-icon.svg"
+                        alt="phone number icon">
+                    <span class="contact-info-text" >
+                        (000) 000-0000
+                    </span>
+                </li>
+                <li class="contact-info-item">
+                    <img class="contact-info-icons" src="../../assets/address-icon.svg"
+                        alt="home icon">
+                    <span class="contact-info-text" >
+                        1234 Somewhere Road #8254 Nashville, TN
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <main class="signup-main">
+        <div class="signup-container">
+            <h2 class="h2-title signup-h2">
+                Sign Up
+            </h2>
+            <form class="signup-form" action="form_submit.php" method="post">
+                <div class="left-container">
+                    <div class="label-input">
+                        <label class="label-form-left" for="name">
+                            Name
+                        </label>
+                        <input id="name" class="input-form placeholder" type="text"
+                            placeholder="Enter your name...">
+                        <p id="name-error" class="invalid-field ds">
+                            Invalid name
+                        </p>
+                    </div>
+                    <div class="label-input">
+                        <label class="label-form-left" for="last name">
+                            Last name
+                        </label>
+                        <input id="lastname" class="input-form placeholder" type="text"
+                            placeholder="Enter your last name...">
+                        <p id="lastname-error" class="invalid-field ds">
+                            Invalid last name
+                        </p>
+                    </div>
+                    <div class="label-input">
+                        <label class="label-form-left" for="dni">
+                            DNI
+                        </label>
+                        <input id="dni" class="input-form placeholder" type="text"
+                            placeholder="Enter your DNI...">
+                        <p id="dni-error" class="invalid-field ds">
+                            Invalid DNI
+                        </p>
+                    </div>
+                    <div class="label-input">
+                        <label class="label-form-left" for="date of birth">
+                            Date of birth
+                        </label>
+                        <input id="dateofbirth" class="input-form placeholder" type="date"
+                            placeholder="dd/mm/aaaa">
+                        <p id="date-error" class="invalid-field ds">
+                            Invalid date of birth
+                        </p>
+                    </div>
+                    <div class="label-input">
+                        <label class="label-form-left" for="phone number">
+                            Phone number
+                        </label>
+                        <input id="phonenumber" class="input-form placeholder" type="text"
+                            placeholder="Enter your phone number...">
+                        <p id="phone-error" class="invalid-field ds">
+                            Invalid phone number
+                        </p>
+                    </div>
+                    <div class="label-input">
+                        <label class="label-form-left" for="address">
+                            Address
+                        </label>
+                        <input id="address" class="input-form placeholder" type="text"
+                            placeholder="Enter your address...">
+                        <p id="address-error" class="invalid-field ds">
+                            Invalid address
+                        </p>
+                    </div>
+                </div>
+                <div class="right-container">
+                    <div class="label-input">
+                        <label class="label-form-left" for="city">
+                            City
+                        </label>
+                        <input id="city" class="input-form placeholder" type="text"
+                            placeholder="Enter your city...">
+                        <p id="city-error" class="invalid-field ds">
+                            Invalid city
+                        </p>
+                    </div>
+                    <div class="label-input">
+                        <label class="label-form-left" for="zip code">
+                            Zip code
+                        </label>
+                        <input id="zipcode" class="input-form placeholder" type="text"
+                            placeholder="Enter your zip code...">
+                        <p id="zipcode-error" class="invalid-field ds">
+                            Invalid zip code
+                        </p>
+                    </div>
+                    <div class="label-input">
+                        <label class="label-form-left" for="email">
+                            Email
+                        </label>
+                        <input id="email" class="input-form placeholder" type="text"
+                            placeholder="Enter your email...">
+                        <p id="email-error" class="invalid-field ds">
+                            Invalid email
+                        </p>
+                    </div>
+                    <div class="label-input">
+                        <label class="label-form-left" for="password">
+                            Password
+                        </label>
+                        <input id="password" class="input-form placeholder" type="password"
+                            placeholder="Enter your password...">
+                        <p id="pass-error" class="invalid-field ds">
+                            Invalid password
+                        </p>
+                    </div>
+                    <div class="label-input">
+                        <label class="label-form-left" for="repeat password">
+                            Repeat password
+                        </label>
+                        <input id="repeatpass" class="input-form placeholder" type="password"
+                            placeholder="Repeat your password...">
+                        <p id="repeatpass-error" class="invalid-field ds">
+                            Invalid password
+                         </p>
+                    </div>
+                    <input id="btn-register" class="button hidden signup-button" type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="../js/sign-up.js"></script>
+</body>
+</html>

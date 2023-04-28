@@ -1,0 +1,74 @@
+.login {
+    display: block;
+}
+
+.home {
+    display: block;
+}
+.signup {
+    display: none;
+}
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 10px 0;
+    box-shadow: inset 0px 16px 24px rgba(0, 0, 0, 0.2);
+}
+
+.signup-h2 {
+    margin-bottom: 20px;
+}
+
+.signup-form {
+    width: 90%;
+}
+
+.input-form {
+    width: 100%;
+}
+
+.red-border {
+    border: 1px solid red;
+}
+
+.invalid-field {
+    font-size: 14px;
+    color: red;
+}
+
+.ds {
+    display: none;
+}
+
+.signup-button {
+    width: 100%;
+}
+
+@media only screen and (min-width: 601px) {
+
+    .signup-button {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+
+    .signup-container {
+        margin-top: 108px;
+    }
+
+    .signup-form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left-container, .right-container {
+        width: 45%;
+    }
+
+}
