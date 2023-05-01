@@ -126,9 +126,21 @@ function focusValidateDNI() {
 
 var dateField = document.querySelector('#dateofbirth');
 var errorDate = document.querySelector('#date-error');
+var dateValidFormat = '';
 
 dateField.addEventListener('blur', blurValidateDate);
 dateField.addEventListener('focus', focusValidateDate);
+
+function dateValid() {
+    var inputLenght = dateField.value.length;
+    var inputDay = (dateField.value.substring((inputLenght - 2), inputLenght));
+    var inputMonth = (dateField.value.substring((inputLenght - 5), (inputLenght - 3)));
+    var inputYear = (dateField.value.substring(0,4));
+
+    var dateValid = `${inputMonth}/${inputDay}/${inputYear}`;
+
+    return dateValid;
+}
 
 function lessThanCurrentDay() {
     var date = new Date();
@@ -138,7 +150,7 @@ function lessThanCurrentDay() {
 
     var inputLenght = dateField.value.length;
     var inputDay = Number(dateField.value.substring((inputLenght - 2), inputLenght));
-    var inputMonth = Number(dateField.value.substring((inputLenght - 3), (inputLenght - 5)));
+    var inputMonth = Number(dateField.value.substring((inputLenght - 5), (inputLenght - 3)));
     var inputYear = Number(dateField.value.substring(0,4));
 
     var lessCurrentDay = true;
@@ -160,6 +172,9 @@ function blurValidateDate() {
     if(dateField.value === '' || lessThanCurrentDay() === false) {
         dateField.classList.add("red-border");
         errorDate.classList.remove("ds");
+    }
+    if(dateValid() != dateValidFormat) {
+        dateValidFormat = dateValid();
     }
 }
 function focusValidateDate() {
@@ -328,91 +343,64 @@ function focusValidateRepeatPass() {
 function validateFieldToArray() {
 
     var arrayIncorrectValue = [];
-    var arrayCorrectValue = [];
 
     if(nameField.classList.contains('red-border') || nameField.value === '') {
         nameField.classList.add('red-border');
         errorName.classList.remove('ds');
         arrayIncorrectValue.push("Invalid Name");
-    }else {
-        arrayCorrectValue.push("Name: " + nameField.value);
     }
     if(lastNameField.classList.contains('red-border') || lastNameField.value === '') {
         lastNameField.classList.add('red-border');
         errorLastName.classList.remove('ds');
         arrayIncorrectValue.push("\nInvalid Last name");
-    }else {
-        arrayCorrectValue.push("\n" + "Last Name: " + lastNameField.value);
     }
     if(dniField.classList.contains('red-border') || dniField.value === '') {
         dniField.classList.add('red-border');
         errorDNI.classList.remove('ds');
         arrayIncorrectValue.push("\nInvalid DNI");
-    }else {
-        arrayCorrectValue.push("\n" + "DNI: " + dniField.value);
     }
     if(dateField.classList.contains('red-border') || dateField.value === '') {
         dateField.classList.add('red-border');
         errorDate.classList.remove('ds');
         arrayIncorrectValue.push("\nInvalid Date");
-    }else {
-        arrayCorrectValue.push("\n" + "Date of Birth: " + dateField.value);
     }
     if(phoneNumberField.classList.contains('red-border') || phoneNumberField.value === '') {
         phoneNumberField.classList.add('red-border');
         errorPhoneNumber.classList.remove('ds');
         arrayIncorrectValue.push("\nInvalid Phone Number");
-    }else {
-        arrayCorrectValue.push("\n" + "Phone Number: " + phoneNumberField.value);
     }
     if(addressField.classList.contains('red-border') || addressField.value === '') {
         addressField.classList.add('red-border');
         errorAddress.classList.remove('ds');
         arrayIncorrectValue.push("\nInvalid Address");
-    }else {
-        arrayCorrectValue.push("\n" + "Address: " + addressField.value);
     }
     if(cityField.classList.contains('red-border') || cityField.value === '') {
         cityField.classList.add('red-border');
         errorCity.classList.remove('ds');
         arrayIncorrectValue.push("\nInvalid City");
-    }else {
-        arrayCorrectValue.push("\n" + "City: " + cityField.value);
     }
     if(zipCodeField.classList.contains('red-border') || zipCodeField.value === '') {
         zipCodeField.classList.add('red-border');
         errorZipCode.classList.remove('ds');
         arrayIncorrectValue.push("\nInvalid Zip Code");
-    }else {
-        arrayCorrectValue.push("\n" + "Zip Code: " + zipCodeField.value);
     }
     if(emailField.classList.contains('red-border') || emailField.value === '') {
         emailField.classList.add('red-border');
         errorEmail.classList.remove('ds');
         arrayIncorrectValue.push("\nInvalid Email");
-    }else {
-        arrayCorrectValue.push("\n" + "Email: " + emailField.value);
     }
     if(passField.classList.contains('red-border') || passField.value === '') {
         passField.classList.add('red-border');
         errorPass.classList.remove('ds');
         arrayIncorrectValue.push("\nInvalid Password");
-    }else {
-        arrayCorrectValue.push("\n" + "Password: " + passField.value);
     }
     if(repeatPassField.classList.contains('red-border') || repeatPassField.value === '') {
         repeatPassField.classList.add('red-border');
         errorRepeatPass.classList.remove('ds');
         arrayIncorrectValue.push("\nInvalid Repeat Password");
-    }else {
-        arrayCorrectValue.push("\n" + "Password Repeat: " + repeatPassField.value);
     }
 
-    if (arrayIncorrectValue.length === 0) {
-        return arrayCorrectValue;
-    }else {
         return arrayIncorrectValue;
-    }
 }
 
 var btnRegister = document.querySelector('#btn-register');
@@ -421,5 +409,100 @@ btnRegister.addEventListener('click', submitRegister);
 
 function submitRegister(e) {
     e.preventDefault();
-    return alert(validateFieldToArray());
+    if (validateFieldToArray().length > 0) {
+        return alert(validateFieldToArray());
+    } else {
+
+        var URL = ` https://api-rest-server.vercel.app/signup?name=${nameField.value}&lastName=${lastNameField.value}&
+dni=${dniField.value}&dob=${dateValidFormat}&phone=${phoneNumberField.value}&address=${addressField.value}&
+city=${cityField.value}&zip=${zipCodeField.value}&email=${emailField.value}&password=${passField.value}&
+password=${repeatPassField.value} `;
+
+        fetch(URL)
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (resp) {
+                if(!resp.success){
+                    throw new Error(JSON.stringify(resp))}
+
+                alert('succesfull request: ' + JSON.stringify(resp));
+
+                alert('Name: ' + nameField.value +
+                '\n' + 'Last Name: ' + lastNameField.value +
+                '\n' + 'DNI: ' + dniField.value +
+                '\n' + 'Date of Birth: ' + dateField.value +
+                '\n' + 'Phone Number: ' + phoneNumberField.value +
+                '\n' + 'Address: ' + addressField.value +
+                '\n' + 'City: ' + cityField.value +
+                '\n' + 'Zip Code: ' + zipCodeField.value +
+                '\n' + 'Email: ' + emailField.value +
+                '\n' + 'Password: ' + passField.value +
+                '\n' + 'Password Repeat: ' + repeatPassField.value)
+
+                localStorage.setItem('name', nameField.value);
+                localStorage.setItem('lastName', lastNameField.value);
+                localStorage.setItem('dni', dniField.value);
+                localStorage.setItem('dob', dateField.value);
+                localStorage.setItem('phone', phoneNumberField.value);
+                localStorage.setItem('address', addressField.value);
+                localStorage.setItem('city', cityField.value);
+                localStorage.setItem('zip', zipCodeField.value);
+                localStorage.setItem('email', emailField.value);
+                localStorage.setItem('password', passField.value);
+                localStorage.setItem('repeatPassword', repeatPassField.value);
+
+            })
+            .catch(function (error) {
+                alert('rejected request: ' + error);
+            });
+    }
+}
+
+window.onload = function() {
+    var nameStorage = localStorage.getItem('name');
+    var lastNameStorage = localStorage.getItem('lastName');
+    var dniStorage = localStorage.getItem('dni');
+    var dobStorage = localStorage.getItem('dob');
+    var phoneStorage = localStorage.getItem('phone');
+    var addressStorage = localStorage.getItem('address');
+    var cityStorage = localStorage.getItem('city');
+    var zipStorage = localStorage.getItem('zip');
+    var emailStorage = localStorage.getItem('email');
+    var passwordStorage = localStorage.getItem('password');
+    var repeatPasswordStorage = localStorage.getItem('repeatPassword');
+
+    if(nameStorage != '') {
+        nameField.value = nameStorage;
+    }
+    if(lastNameStorage != '') {
+        lastNameField.value = lastNameStorage;
+    }
+    if(dniStorage != '') {
+        dniField.value = dniStorage;
+    }
+    if(dobStorage != '') {
+        dateField.value = dobStorage;
+    }
+    if (phoneStorage != '') {
+        phoneNumberField.value = phoneStorage;
+    }
+    if(addressStorage != '') {
+        addressField.value = addressStorage;
+    }
+    if (cityStorage != '') {
+        cityField.value = cityStorage;
+    }
+    if (zipStorage != '') {
+        zipCodeField.value = zipStorage;
+    }
+    if (emailStorage != '') {
+        emailField.value = emailStorage;
+    }
+    if (passwordStorage != '') {
+        passField.value = passwordStorage;
+    }
+    if(repeatPasswordStorage != '') {
+        repeatPassField.value = repeatPasswordStorage;
+       }
 }

@@ -97,6 +97,7 @@ function submitLogin(e) {
                 if(!resp.success){
                     throw new Error(JSON.stringify(resp))}
                 alert('succesfull request: ' + JSON.stringify(resp));
+                alert('Email: ' + emailField.value + '\n' + 'Password: ' + passField.value);
             })
             .catch(function (error) {
                 alert('rejected request: ' + error);
