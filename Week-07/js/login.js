@@ -62,28 +62,19 @@ function focusValidatePass() {
 function validateFieldToArray() {
 
     var arrayIncorrectValue = [];
-    var arrayCorrectValue = [];
 
     if(emailField.classList.contains('red-border') || emailField.value === '') {
         emailField.classList.add('red-border');
         errorEmail.classList.remove('ds');
         arrayIncorrectValue.push("Invalid Email");
-    }else {
-        arrayCorrectValue.push("Email: " + emailField.value);
     }
     if(passField.classList.contains('red-border') || passField.value === '') {
         passField.classList.add('red-border');
         errorPass.classList.remove('ds');
         arrayIncorrectValue.push("\nInvalid Password");
-    }else {
-        arrayCorrectValue.push("\n" + "Password: " + passField.value);
     }
 
-    if (arrayIncorrectValue.length === 0) {
-        return arrayCorrectValue;
-    }else {
-        return arrayIncorrectValue;
-    }
+    return arrayIncorrectValue;
 }
 
 var btnLogin = document.querySelector('#btn-login');
@@ -92,5 +83,23 @@ btnLogin.addEventListener('click', submitLogin);
 
 function submitLogin(e) {
     e.preventDefault();
-    return alert(validateFieldToArray());
-}
+    if (validateFieldToArray().length > 0) {
+        return alert(validateFieldToArray());
+    } else {
+
+        var URL = ` https://api-rest-server.vercel.app/login?email=${emailField.value}&password=${passField.value} `;
+
+        fetch(URL)
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (resp) {
+                if(!resp.success){
+                    throw new Error(JSON.stringify(resp))}
+                alert('succesfull request: ' + JSON.stringify(resp));
+            })
+            .catch(function (error) {
+                alert('rejected request: ' + error);
+            });
+    };
+};
