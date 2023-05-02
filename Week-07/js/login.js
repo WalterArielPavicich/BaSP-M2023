@@ -1,3 +1,20 @@
+// MODAL //
+
+var modal = document.querySelector("#myModal");
+var modalContent = document.querySelector('#p-modal');
+var domValidation = document.querySelector('#dom-validation');
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
 // VALIDATE EMAIL //
 
 var emailField = document.querySelector("#email");
@@ -84,7 +101,17 @@ btnLogin.addEventListener('click', submitLogin);
 function submitLogin(e) {
     e.preventDefault();
     if (validateFieldToArray().length > 0) {
-        return alert(validateFieldToArray());
+
+        var msgValidate = validateFieldToArray();
+
+        modalContent.classList.remove('p-modal');
+        domValidation.classList.remove('dom-validation');
+        modalContent.classList.add('error-title');
+        domValidation.classList.add('error-text');
+        modal.style.display = "flex";
+        modalContent.innerHTML = 'Validation Error';
+        domValidation.innerHTML = msgValidate;
+
     } else {
 
         var URL = ` https://api-rest-server.vercel.app/login?email=${emailField.value}&password=${passField.value} `;
@@ -95,12 +122,29 @@ function submitLogin(e) {
             })
             .then(function (resp) {
                 if(!resp.success){
-                    throw new Error(JSON.stringify(resp))}
-                alert('succesfull request: ' + JSON.stringify(resp));
-                alert('Email: ' + emailField.value + '\n' + 'Password: ' + passField.value);
+                    throw new Error(JSON.stringify(resp.msg))}
+
+                var msgValid = 'Email: ' + emailField.value + '\n' + 'Password: ' + passField.value;
+
+                modal.style.display = "flex";
+                modalContent.classList.remove('error-title');
+                domValidation.classList.remove('error-text');
+                modalContent.classList.add('p-modal');
+                domValidation.classList.add('dom-validation');
+                modalContent.innerHTML = resp.msg;
+                domValidation.innerHTML = msgValid;
+
             })
             .catch(function (error) {
-                alert('rejected request: ' + error);
+
+                modal.style.display = "flex";
+                modalContent.classList.add('error-title');
+                domValidation.classList.add('error-text');
+                modalContent.classList.remove('p-modal');
+                domValidation.classList.remove('dom-validation');
+                modalContent.innerHTML = 'Login Error';
+                domValidation.innerHTML = error;
+
             });
     };
 };

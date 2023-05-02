@@ -1,3 +1,20 @@
+// MODAL //
+
+var modal = document.querySelector("#myModal");
+var modalContent = document.querySelector('#p-modal');
+var domValidation = document.querySelector('#dom-validation');
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
 // GENERAL FUNCTIONS //
 
 function onlyLetters(str) {
@@ -126,7 +143,7 @@ function focusValidateDNI() {
 
 var dateField = document.querySelector('#dateofbirth');
 var errorDate = document.querySelector('#date-error');
-var dateValidFormat = '';
+var dateValidFormat = dateField.value;
 
 dateField.addEventListener('blur', blurValidateDate);
 dateField.addEventListener('focus', focusValidateDate);
@@ -172,9 +189,6 @@ function blurValidateDate() {
     if(dateField.value === '' || lessThanCurrentDay() === false) {
         dateField.classList.add("red-border");
         errorDate.classList.remove("ds");
-    }
-    if(dateValid() != dateValidFormat) {
-        dateValidFormat = dateValid();
     }
 }
 function focusValidateDate() {
@@ -403,6 +417,8 @@ function validateFieldToArray() {
         return arrayIncorrectValue;
 }
 
+
+
 var btnRegister = document.querySelector('#btn-register');
 
 btnRegister.addEventListener('click', submitRegister);
@@ -410,8 +426,19 @@ btnRegister.addEventListener('click', submitRegister);
 function submitRegister(e) {
     e.preventDefault();
     if (validateFieldToArray().length > 0) {
-        return alert(validateFieldToArray());
+
+        var msgValidate = validateFieldToArray();
+
+        modalContent.classList.remove('p-modal');
+        domValidation.classList.remove('dom-validation');
+        modalContent.classList.add('error-title');
+        domValidation.classList.add('error-text');
+        modal.style.display = "flex";
+        modalContent.innerHTML = ' Validation Error';
+        domValidation.innerHTML = msgValidate;
+
     } else {
+        dateValidFormat = dateValid();
 
         var URL = ` https://api-rest-server.vercel.app/signup?name=${nameField.value}&lastName=${lastNameField.value}&
 dni=${dniField.value}&dob=${dateValidFormat}&phone=${phoneNumberField.value}&address=${addressField.value}&
@@ -426,9 +453,7 @@ password=${repeatPassField.value} `;
                 if(!resp.success){
                     throw new Error(JSON.stringify(resp))}
 
-                alert('succesfull request: ' + JSON.stringify(resp));
-
-                alert('Name: ' + nameField.value +
+                var msgValid = 'Name: ' + nameField.value +
                 '\n' + 'Last Name: ' + lastNameField.value +
                 '\n' + 'DNI: ' + dniField.value +
                 '\n' + 'Date of Birth: ' + dateField.value +
@@ -438,7 +463,15 @@ password=${repeatPassField.value} `;
                 '\n' + 'Zip Code: ' + zipCodeField.value +
                 '\n' + 'Email: ' + emailField.value +
                 '\n' + 'Password: ' + passField.value +
-                '\n' + 'Password Repeat: ' + repeatPassField.value)
+                '\n' + 'Password Repeat: ' + repeatPassField.value;
+
+                modal.style.display = "flex";
+                modalContent.classList.remove('error-title');
+                domValidation.classList.remove('error-text');
+                modalContent.classList.add('p-modal');
+                domValidation.classList.add('dom-validation');
+                modalContent.innerHTML = resp.msg;
+                domValidation.innerHTML = msgValid;
 
                 localStorage.setItem('name', nameField.value);
                 localStorage.setItem('lastName', lastNameField.value);
@@ -454,7 +487,15 @@ password=${repeatPassField.value} `;
 
             })
             .catch(function (error) {
-                alert('rejected request: ' + error);
+
+                modal.style.display = "flex";
+                modalContent.classList.add('error-title');
+                domValidation.classList.add('error-text');
+                modalContent.classList.remove('p-modal');
+                domValidation.classList.remove('dom-validation');
+                modalContent.innerHTML = 'Registration Error';
+                domValidation.innerHTML = error;
+
             });
     }
 }
